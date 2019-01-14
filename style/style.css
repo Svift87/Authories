@@ -2426,8 +2426,9 @@ h3 {
 	margin-bottom: 2.4vw
 }
 
-.breadcrumbs h2 {
+.breadcrumbs h1 {
 	font-size: 2.7vw;
+	font-weight: 400;
 }
 
 .breadcrumbs-list {
