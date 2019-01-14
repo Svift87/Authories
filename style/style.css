@@ -3803,4 +3803,79 @@ h3 {
 		width: 3.1rem;
 		border-radius: 3.1rem;
 	}
+	
+	.breadcrumbs {
+		margin-bottom: 3.2rem
+	}
+
+	.breadcrumbs h2 {
+		font-size: 3.6rem;
+	}
+
+	.breadcrumbs-list {
+		font-size: 1.4rem;
+		margin-bottom: 3.2rem;
+	}
+
+	.breadcrumbs-item {
+		padding-right: 5rem;
+	}
+
+	.breadcrumbs-item::after {
+		width: 2.05rem;
+		height: 0.9rem;
+		top: 0.3rem;
+		right: 1.3rem;
+	}
+
+	.car-brands .record-right {
+		line-height: 3.3rem;
+	}
+
+	.record-left-stock {
+		width: 64.1rem;
+	}
+
+	.record-left-stock h2 {
+		margin-bottom: 1.6rem;
+	}
+
+	.record-left-stock>p {
+		margin-bottom: 1.6rem;
+	}
+
+	.record-left-stock .rr-loading {
+		height: 50rem;
+	}
+
+	.record-left-stock .rrl-frame {
+		height: 43.3rem;
+	}
+
+	.record-right-stock {
+		width: 61rem;	
+	}
+
+	.record-right-stock h2 {
+		margin-bottom: 4.5rem;
+	}
+
+	.record-right-stock p {
+		line-height: 3.3rem;
+		font-size: 1.4rem;
+	}
+
+	.fcrll-networks {
+		width: 20rem;
+	}
+
+	.fcrllnl-block {
+		width: 2.4rem;
+		height: 2.4rem;
+	}
+
+	.fcrllnl-block img {
+		width: 2rem;
+		height: 2rem;
+	}
 }
