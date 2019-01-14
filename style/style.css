@@ -1,0 +1,3806 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+.container {
+	margin: 0 auto;
+	max-width:  133rem;
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+
+.header-top {
+	background-color: #F2F2F2;	
+}
+
+.header-top .container {
+	font-size: 0.9vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 3.2em;
+}
+
+.header-top .top-left {
+	width: 56.84vw;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-top .top-text-1 {
+	padding-left: 1.8vw;
+	position: relative;
+}
+
+.header-top .top-text-2 {
+	padding-left: 1.7vw;
+	position: relative;
+}
+
+.header-top .top-text-3 {
+	padding-left: 1.7vw;
+	position: relative;
+}
+
+.header-top .top-right {
+	padding-left: 1.7vw;
+	position: relative;
+}
+
+
+.header-top .top-text-1::after,
+.header-top .top-text-2::after,
+.header-top .top-text-3 a::after,
+.header-top .top-right a::after {
+	content: "";
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	width: 1.5vw;
+	height: 1.5vw;
+	left: 0;
+	top: -0.3vw;
+}
+
+.header-top .top-text-1::after {
+	background-image: url(../img/baseline-place-24px.svg);
+}
+
+.header-top .top-text-2::after {
+	background-image: url(../img/baseline-access_time-24px.svg);
+}
+
+.header-top .top-text-3 a::after {
+	background-image: url(../img/baseline-mail-24px.svg);
+}
+
+.header-top .top-right a::after {
+	background-image: url(../img/man-user.svg);
+}
+
+.header-bottom {
+	font-size: 0.9vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 9.6vw;
+}
+
+.header-bottom .bottom-left {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 38.57vw;
+}
+
+.logo img {
+	width: 23vw;
+}
+
+.header-bottom .bottom-left p {
+	font-size: 1.1vw;
+}
+
+.header-bottom .bottom-right {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 45vw;
+	padding-left: 2.3vw;
+	position: relative;
+}
+
+.header-bottom .bottom-right::after {
+	content: "";
+	background-image: url(../img/baseline-phone-24px.svg);
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	width: 1.7vw;
+	height: 1.7vw;
+	left: 0;
+	bottom: 0.1vw;
+}
+
+.header-bottom .right-phone p {
+	margin-bottom: 0.8vw;
+}
+
+.header-bottom .right-phone a {
+	font-size: 1.8vw;
+	font-weight: bold;
+}
+
+.header-bottom .btn {
+	border: 0.1rem solid #DA251C;
+	height: 3vw;
+	width: 10.8vw;
+	border-radius: 0.5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-bottom .btn:hover {
+	background-color: #DA251C;
+	color: #ffffff;	
+}
+
+.nav-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 4.8vw;
+	border-top: 0.2vw solid #E5E5E5;
+	border-bottom: 0.2vw solid #E5E5E5;
+	font-size: 1.05vw;	
+}
+
+.nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.nav-item a {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.nav-item-active {
+	padding-right: 2vw;
+	position: relative;
+}
+
+.nav-item-active>a {
+	font-weight: bold
+}
+
+.nav-item-active:hover>a {
+	color: #b41818;
+}
+
+.nav-item-active>a::after {
+	content: "";
+	background-image: url(../img/Vector2.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	right: 0;
+	top: 0.2vw;
+	width: 0.9vw;
+	height: 0.6vw;
+}
+
+.sub-list {
+	display: none;
+	position: absolute;
+	top: 1.1vw;
+	min-width: max-content;	
+	z-index: 2;
+	padding-top: 2vw !important;
+}
+
+.sub-item {	
+	height: 2.3vw;
+	display: flex;
+	align-items: center;
+	padding: 0.8vw;
+	border-bottom: 0.15vw solid #fff;
+	background-color: #b41818;
+	cursor: pointer;
+}
+
+.nav-item-active:hover .sub-list {
+	display: block;
+}
+
+.sub-item a {
+	color: #fff;
+}
+
+.nav-item img {
+	width: 2vw;
+}
+
+.nav-bottom {
+	background-color: #F2F2F2;
+	margin-bottom: 2.4vw;
+}
+
+.nav-bottom .nav-list {
+	margin-top: 1.5vw;
+	border: none;
+	height: auto;
+	width: 100%;	
+}
+
+.nav-bottom .nav-item {
+	width: 25%;
+}
+
+.nav-bottom .nav-item a {
+	width: 100%;
+	height: 10.4vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 0.4vw solid #F2F2F2;
+	position: relative;
+	background-color: #F2F2F2;
+}
+
+.nav-bottom .nav-item svg {
+	margin-right: 1.8vw;	
+	fill: #444C57;
+}
+
+.ni-dws svg {
+	width: 4.2vw;
+}
+
+.ni-to svg {
+	width: 4.5vw;
+}
+
+.ni-repairs svg,
+.ni-diagnostics svg {
+	width: 3.6vw;
+}
+
+.nav-bottom .nav-item:hover svg {
+	fill: #000;
+}
+
+.nav-bottom .nav-item a:hover {
+	background-color: #E2E2E2;
+	border-bottom: 0.4vw solid #DA251C;
+	color: #000;
+}
+
+h2 {
+	font-size: 2.4vw;
+	font-weight: 400;
+}
+
+.car-brands {
+	margin-bottom: 2.4vw;
+}
+
+.car-brands>input {
+	display: none;
+}
+
+.cb-slide-controls {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 2.4vw;
+	border-bottom: 0.1vw solid #E5E5E5;
+}
+
+.sc-label {
+	display: flex;
+	align-items: flex-end;
+}
+
+.sc-controls-radio {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 19.2vw;
+	height: 6.1vw;
+	cursor: pointer;
+	font-size: 1.35vw;
+	text-transform: uppercase;
+	border: 0.1vw solid #E5E5E5;
+	border-radius: 0.4vw 0.4vw 0 0;
+	background-color: rgba(243, 243, 243, 0.8);
+}
+
+.sc-controls-radio svg {
+	margin-right: 1vw;
+	width: 3vw;
+	height: 3vw;
+}
+
+.cb-link-radio-toyota:checked ~ .cb-slide-controls .sc-controls-radio-toyota,
+.cb-link-radio-lexus:checked ~ .cb-slide-controls .sc-controls-radio-lexus {
+	height: 6.7vw;
+	background-color: #fff;
+}
+
+.cb-slide-controls input {
+	width: 25.2vw;
+	height: 3.7vw;
+	font-size: 1.05vw;
+	color: #000;
+	padding-left: 4.4vw;
+	border: 1px solid #E5E5E5;
+	border-radius: 0.4vw;
+}
+
+.cb-slide-controls input::placeholder {
+	color: #000;	
+}
+
+.sc-search {
+	position: relative;
+}
+
+.sc-search svg {
+	position: absolute;
+	top: 0.98vw;
+	left: 1.5vw;
+	width: 1.8vw;
+	height: 1.8vw;
+}
+
+.cbt-container,
+.cbl-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cbt-link-radio,
+.cbl-link-radio {
+	display: none;
+}
+
+.cb-toyota,
+.cb-lexus {
+	display: none;
+}
+
+.cb-link-radio-toyota:checked ~ .cb-toyota,
+.cb-link-radio-lexus:checked ~ .cb-lexus {
+	display: block;
+}
+
+.cb-toyota .cbt-container,
+.cb-lexus .cbl-container {
+	height: 18vw;
+	display: none;
+	margin-bottom: 2vw;
+	margin-top: 1vw;
+}
+
+.cb-link-radio-toyota:checked ~ .cb-toyota .cbt-container,
+.cb-link-radio-lexus:checked ~ .cb-lexus .cbl-container {
+	display: flex;
+}
+
+.cb-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 14.4vw;
+	height: 100%;
+	text-transform: uppercase;
+	font-size: 1.05vw;
+	text-align: center;
+}
+
+.cb-card:hover {	
+	background: #FFFFFF;
+	box-shadow: 0px 0.4vw 0.8vw rgba(0, 0, 0, 0.15);
+	border-radius: 0.4vw;
+}
+
+.cb-card-img {
+	height: 10.6vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cb-card-img img {
+	width: 100%;
+}
+
+.cb-card:hover p {
+	position: relative;
+	font-weight: 700;
+	top: -0.5vw;
+}
+
+.cb-card label {
+	visibility: hidden;
+	cursor: pointer;
+	color: #fff;
+	background-color: #444C57;
+	border-radius: 0.4vw;
+	height: 3vw;
+	width: 10.2vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1.35vw;
+}
+
+.cb-card:hover label {
+	visibility: visible;
+}
+
+.cbt-cost,
+.cbl-cost {
+	display: none;
+	flex-direction: column;
+}
+
+.cbt-link-radio-toyota-1:checked ~ .cbt-cost-1,
+.cbt-link-radio-toyota-2:checked ~ .cbt-cost-2,
+.cbt-link-radio-toyota-3:checked ~ .cbt-cost-3,
+.cbt-link-radio-toyota-4:checked ~ .cbt-cost-4,
+.cbt-link-radio-toyota-5:checked ~ .cbt-cost-5,
+.cbt-link-radio-toyota-6:checked ~ .cbt-cost-6 {
+	display: flex;
+}
+
+.cbl-link-radio-lexus-1:checked ~ .cbl-cost-1,
+.cbl-link-radio-lexus-2:checked ~ .cbl-cost-2,
+.cbl-link-radio-lexus-3:checked ~ .cbl-cost-3,
+.cbl-link-radio-lexus-4:checked ~ .cbl-cost-4,
+.cbl-link-radio-lexus-5:checked ~ .cbl-cost-5,
+.cbl-link-radio-lexus-6:checked ~ .cbl-cost-6 {
+	display: flex;
+}
+
+.cbtc-content,
+.cblc-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cbtc-radio,
+.cblc-radio {
+	display: none;
+}
+
+.cbtc-container,
+.cblc-container {
+	display: flex;
+	flex-direction: column;
+	font-size: 1.2vw;
+	text-transform: uppercase;
+	width: 31.35%;
+}
+
+.cbtc-container p,
+.cblc-container p {
+	height: 4.8vw;
+	padding-left: 2.96vw;
+	display: flex;
+	align-items: center;
+}
+
+.cbtc-container label,
+.cblc-container label {
+	cursor: pointer;	
+	height: 4.8vw;
+	padding-left: 2.56vw;
+	border-left: 0.4vw solid #F2F2F2;
+	border-bottom: 0.1vw solid #fff;
+	display: flex;
+	align-items: center;
+	background-color: #F2F2F2;
+}
+
+.cbt-cost form,
+.cbl-cost form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-size: 1.2vw;
+	align-items: flex-end;
+}
+
+.cbtcf-price tr,
+.cblcf-price tr {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 3.6vw;
+	width: 65vw;	
+}
+
+.cbtcf-price tr:nth-child(2n+3),
+.cblcf-price tr:nth-child(2n+3) {
+	background-color: #F2F2F2;
+}
+
+.cbtcf-price td:last-child,
+.cblcf-price td:last-child {
+	display: flex;
+	align-items: center;	
+}
+
+.cbtcf-price td p,
+.cblcf-price td p {
+	width: 8.4vw;
+	text-align: right;
+}
+
+.cbtcf-price,
+.cblcf-price {
+	display: none;
+}
+
+.cbtcf-work-price,
+.cblcf-work-price {
+	display: none;
+}
+
+.cbtcf-work-price:checked .cbtcf-price p,
+.cblcf-work-price:checked .cblcf-price p {
+	font-weight: 700;
+}
+
+.cbtcf-price tr:first-child,
+.cblcf-price tr:first-child {
+	padding-bottom: 1.2vw;
+}
+
+/*
+TOYOTA LAND CRUISER
+*/
+
+.cbtc-1-radio-front:checked ~ .cbtc-container .cbtc-1c-radio-front,
+.cbtc-1-radio-back:checked ~ .cbtc-container .cbtc-1c-radio-back,
+.cbtc-1-radio-steering:checked ~ .cbtc-container .cbtc-1c-radio-steering,
+.cbtc-1-radio-brake:checked ~ .cbtc-container .cbtc-1c-radio-brake,
+.cbtc-1-radio-transmission:checked ~ .cbtc-container .cbtc-1c-radio-transmission,
+.cbtc-1-radio-cooling:checked ~ .cbtc-container .cbtc-1c-radio-cooling,
+.cbtc-1-radio-engine:checked ~ .cbtc-container .cbtc-1c-radio-engine,
+.cbtc-1-radio-electrician:checked ~ .cbtc-container .cbtc-1c-radio-electrician,
+.cbtc-1-radio-fuel:checked ~ .cbtc-container .cbtc-1c-radio-fuel {
+	background-color: rgba(226, 226, 226, 0.8);
+	border-left: 0.4vw solid #DA251C;
+	font-weight: 700;
+}
+
+.cbtc-1f-btn {
+	cursor: pointer;
+	width: 19.3vw;
+	height: 4.8vw;
+	color: #fff;
+	background-color: #AF120A;
+	border: none;
+	text-transform: uppercase;
+}
+
+
+
+.cbtc-1f-work-checkbox {
+	width: 1.2vw;
+	height: 1.2vw;
+	border: 0.1vw solid #cccccc;
+	border-radius: 0.2vw;
+	cursor: pointer;
+	position: relative;
+}
+
+
+
+.cbtc-1-radio-front:checked ~ .cbtc-1-form .cbtc-1f-front-price,
+.cbtc-1-radio-back:checked ~ .cbtc-1-form .cbtc-1f-back-price,
+.cbtc-1-radio-steering:checked ~ .cbtc-1-form .cbtc-1f-steering-price,
+.cbtc-1-radio-brake:checked ~ .cbtc-1-form .cbtc-1f-brake-price,
+.cbtc-1-radio-transmission:checked ~ .cbtc-1-form .cbtc-1f-transmission-price,
+.cbtc-1-radio-cooling:checked ~ .cbtc-1-form .cbtc-1f-cooling-price,
+.cbtc-1-radio-engine:checked ~ .cbtc-1-form .cbtc-1f-engine-price,
+.cbtc-1-radio-electrician:checked ~ .cbtc-1-form .cbtc-1f-electrician-price,
+.cbtc-1-radio-fuel:checked ~ .cbtc-1-form .cbtc-1f-fuel-price {
+	display: block;
+}
+
+#cbtc-1f-work-price-1:checked ~ table .cbtc-1f-work-checkbox-1::after,
+#cbtc-1f-work-price-2:checked ~ table .cbtc-1f-work-checkbox-2::after,
+#cbtc-1f-work-price-3:checked ~ table .cbtc-1f-work-checkbox-3::after,
+#cbtc-1f-work-price-4:checked ~ table .cbtc-1f-work-checkbox-4::after,
+#cbtc-1f-work-price-5:checked ~ table .cbtc-1f-work-checkbox-5::after,
+#cbtc-1f-work-price-6:checked ~ table .cbtc-1f-work-checkbox-6::after,
+#cbtc-1f-work-price-7:checked ~ table .cbtc-1f-work-checkbox-7::after,
+#cbtc-1f-work-price-8:checked ~ table .cbtc-1f-work-checkbox-8::after,
+#cbtc-1f-work-price-9:checked ~ table .cbtc-1f-work-checkbox-9::after,
+#cbtc-1f-work-price-10:checked ~ table .cbtc-1f-work-checkbox-10::after,
+#cbtc-1f-work-price-11:checked ~ table .cbtc-1f-work-checkbox-11::after,
+#cbtc-1f-work-price-12:checked ~ table .cbtc-1f-work-checkbox-12::after,
+#cbtc-1f-work-price-13:checked ~ table .cbtc-1f-work-checkbox-13::after,
+#cbtc-1f-work-price-14:checked ~ table .cbtc-1f-work-checkbox-14::after,
+#cbtc-1f-work-price-15:checked ~ table .cbtc-1f-work-checkbox-15::after {
+	content: "";
+	background-image: url(../img/Vector3.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 1vw;
+	height: 1vw;
+	position: absolute;
+	top: -0.3vw;
+	left: 0.2vw
+}
+
+#cbtc-1f-work-price-1:checked ~ table .cbtc-1fp-name-1,
+#cbtc-1f-work-price-2:checked ~ table .cbtc-1fp-name-2,
+#cbtc-1f-work-price-3:checked ~ table .cbtc-1fp-name-3,
+#cbtc-1f-work-price-4:checked ~ table .cbtc-1fp-name-4,
+#cbtc-1f-work-price-5:checked ~ table .cbtc-1fp-name-5,
+#cbtc-1f-work-price-6:checked ~ table .cbtc-1fp-name-6,
+#cbtc-1f-work-price-7:checked ~ table .cbtc-1fp-name-7,
+#cbtc-1f-work-price-8:checked ~ table .cbtc-1fp-name-8,
+#cbtc-1f-work-price-9:checked ~ table .cbtc-1fp-name-9,
+#cbtc-1f-work-price-10:checked ~ table .cbtc-1fp-name-10,
+#cbtc-1f-work-price-11:checked ~ table .cbtc-1fp-name-11,
+#cbtc-1f-work-price-12:checked ~ table .cbtc-1fp-name-12,
+#cbtc-1f-work-price-13:checked ~ table .cbtc-1fp-name-13,
+#cbtc-1f-work-price-14:checked ~ table .cbtc-1fp-name-14,
+#cbtc-1f-work-price-15:checked ~ table .cbtc-1fp-name-15 {
+	font-weight: 700;
+	background-color: #F0F5F9;
+}
+
+/*
+TOYOTA SEQUOIA
+*/
+
+.cbtc-2-radio-front:checked ~ .cbtc-container .cbtc-2c-radio-front,
+.cbtc-2-radio-back:checked ~ .cbtc-container .cbtc-2c-radio-back,
+.cbtc-2-radio-steering:checked ~ .cbtc-container .cbtc-2c-radio-steering,
+.cbtc-2-radio-brake:checked ~ .cbtc-container .cbtc-2c-radio-brake,
+.cbtc-2-radio-transmission:checked ~ .cbtc-container .cbtc-2c-radio-transmission,
+.cbtc-2-radio-cooling:checked ~ .cbtc-container .cbtc-2c-radio-cooling,
+.cbtc-2-radio-engine:checked ~ .cbtc-container .cbtc-2c-radio-engine,
+.cbtc-2-radio-electrician:checked ~ .cbtc-container .cbtc-2c-radio-electrician,
+.cbtc-2-radio-fuel:checked ~ .cbtc-container .cbtc-2c-radio-fuel {
+	background-color: rgba(226, 226, 226, 0.8);
+	border-left: 0.4vw solid #DA251C;
+	font-weight: 700;
+}
+
+.cbtc-2f-btn {
+	cursor: pointer;
+	width: 19.3vw;
+	height: 4.8vw;
+	color: #fff;
+	background-color: #AF120A;
+	border: none;
+	text-transform: uppercase;
+}
+
+.cbtc-2f-work-checkbox {
+	width: 1.2vw;
+	height: 1.2vw;
+	border: 0.1vw solid #cccccc;
+	border-radius: 0.2vw;
+	cursor: pointer;
+	position: relative;
+}
+
+.cbtc-2-radio-front:checked ~ .cbtc-2-form .cbtc-2f-front-price,
+.cbtc-2-radio-back:checked ~ .cbtc-2-form .cbtc-2f-back-price,
+.cbtc-2-radio-steering:checked ~ .cbtc-2-form .cbtc-2f-steering-price,
+.cbtc-2-radio-brake:checked ~ .cbtc-2-form .cbtc-2f-brake-price,
+.cbtc-2-radio-transmission:checked ~ .cbtc-2-form .cbtc-2f-transmission-price,
+.cbtc-2-radio-cooling:checked ~ .cbtc-2-form .cbtc-2f-cooling-price,
+.cbtc-2-radio-engine:checked ~ .cbtc-2-form .cbtc-2f-engine-price,
+.cbtc-2-radio-electrician:checked ~ .cbtc-2-form .cbtc-2f-electrician-price,
+.cbtc-2-radio-fuel:checked ~ .cbtc-2-form .cbtc-2f-fuel-price {
+	display: block;
+}
+
+#cbtc-2f-work-price-1:checked ~ table .cbtc-2f-work-checkbox-1::after,
+#cbtc-2f-work-price-2:checked ~ table .cbtc-2f-work-checkbox-2::after,
+#cbtc-2f-work-price-3:checked ~ table .cbtc-2f-work-checkbox-3::after,
+#cbtc-2f-work-price-4:checked ~ table .cbtc-2f-work-checkbox-4::after,
+#cbtc-2f-work-price-5:checked ~ table .cbtc-2f-work-checkbox-5::after,
+#cbtc-2f-work-price-6:checked ~ table .cbtc-2f-work-checkbox-6::after,
+#cbtc-2f-work-price-7:checked ~ table .cbtc-2f-work-checkbox-7::after,
+#cbtc-2f-work-price-8:checked ~ table .cbtc-2f-work-checkbox-8::after,
+#cbtc-2f-work-price-9:checked ~ table .cbtc-2f-work-checkbox-9::after,
+#cbtc-2f-work-price-10:checked ~ table .cbtc-2f-work-checkbox-10::after,
+#cbtc-2f-work-price-11:checked ~ table .cbtc-2f-work-checkbox-11::after,
+#cbtc-2f-work-price-12:checked ~ table .cbtc-2f-work-checkbox-12::after,
+#cbtc-2f-work-price-13:checked ~ table .cbtc-2f-work-checkbox-13::after,
+#cbtc-2f-work-price-14:checked ~ table .cbtc-2f-work-checkbox-14::after,
+#cbtc-2f-work-price-15:checked ~ table .cbtc-2f-work-checkbox-15::after {
+	content: "";
+	background-image: url(../img/Vector3.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 1vw;
+	height: 1vw;
+	position: absolute;
+	top: -0.3vw;
+	left: 0.2vw
+}
+
+#cbtc-2f-work-price-1:checked ~ table .cbtc-2fp-name-1,
+#cbtc-2f-work-price-2:checked ~ table .cbtc-2fp-name-2,
+#cbtc-2f-work-price-3:checked ~ table .cbtc-2fp-name-3,
+#cbtc-2f-work-price-4:checked ~ table .cbtc-2fp-name-4,
+#cbtc-2f-work-price-5:checked ~ table .cbtc-2fp-name-5,
+#cbtc-2f-work-price-6:checked ~ table .cbtc-2fp-name-6,
+#cbtc-2f-work-price-7:checked ~ table .cbtc-2fp-name-7,
+#cbtc-2f-work-price-8:checked ~ table .cbtc-2fp-name-8,
+#cbtc-2f-work-price-9:checked ~ table .cbtc-2fp-name-9,
+#cbtc-2f-work-price-10:checked ~ table .cbtc-2fp-name-10,
+#cbtc-2f-work-price-11:checked ~ table .cbtc-2fp-name-11,
+#cbtc-2f-work-price-12:checked ~ table .cbtc-2fp-name-12,
+#cbtc-2f-work-price-13:checked ~ table .cbtc-2fp-name-13,
+#cbtc-2f-work-price-14:checked ~ table .cbtc-2fp-name-14,
+#cbtc-2f-work-price-15:checked ~ table .cbtc-2fp-name-15 {
+	font-weight: 700;
+	background-color: #F0F5F9;
+}
+
+/*
+TOYOTA TUNDRA
+*/
+
+.cbtc-3-radio-front:checked ~ .cbtc-container .cbtc-3c-radio-front,
+.cbtc-3-radio-back:checked ~ .cbtc-container .cbtc-3c-radio-back,
+.cbtc-3-radio-steering:checked ~ .cbtc-container .cbtc-3c-radio-steering,
+.cbtc-3-radio-brake:checked ~ .cbtc-container .cbtc-3c-radio-brake,
+.cbtc-3-radio-transmission:checked ~ .cbtc-container .cbtc-3c-radio-transmission,
+.cbtc-3-radio-cooling:checked ~ .cbtc-container .cbtc-3c-radio-cooling,
+.cbtc-3-radio-engine:checked ~ .cbtc-container .cbtc-3c-radio-engine,
+.cbtc-3-radio-electrician:checked ~ .cbtc-container .cbtc-3c-radio-electrician,
+.cbtc-3-radio-fuel:checked ~ .cbtc-container .cbtc-3c-radio-fuel {
+	background-color: rgba(226, 226, 226, 0.8);
+	border-left: 0.4vw solid #DA251C;
+	font-weight: 700;
+}
+
+.cbtc-3f-btn {
+	cursor: pointer;
+	width: 19.3vw;
+	height: 4.8vw;
+	color: #fff;
+	background-color: #AF120A;
+	border: none;
+	text-transform: uppercase;
+}
+
+.cbtc-3f-work-checkbox {
+	width: 1.2vw;
+	height: 1.2vw;
+	border: 0.1vw solid #cccccc;
+	border-radius: 0.2vw;
+	cursor: pointer;
+	position: relative;
+}
+
+.cbtc-3-radio-front:checked ~ .cbtc-3-form .cbtc-3f-front-price,
+.cbtc-3-radio-back:checked ~ .cbtc-3-form .cbtc-3f-back-price,
+.cbtc-3-radio-steering:checked ~ .cbtc-3-form .cbtc-3f-steering-price,
+.cbtc-3-radio-brake:checked ~ .cbtc-3-form .cbtc-3f-brake-price,
+.cbtc-3-radio-transmission:checked ~ .cbtc-3-form .cbtc-3f-transmission-price,
+.cbtc-3-radio-cooling:checked ~ .cbtc-3-form .cbtc-3f-cooling-price,
+.cbtc-3-radio-engine:checked ~ .cbtc-3-form .cbtc-3f-engine-price,
+.cbtc-3-radio-electrician:checked ~ .cbtc-3-form .cbtc-3f-electrician-price,
+.cbtc-3-radio-fuel:checked ~ .cbtc-3-form .cbtc-3f-fuel-price {
+	display: block;
+}
+
+#cbtc-3f-work-price-1:checked ~ table .cbtc-3f-work-checkbox-1::after,
+#cbtc-3f-work-price-2:checked ~ table .cbtc-3f-work-checkbox-2::after,
+#cbtc-3f-work-price-3:checked ~ table .cbtc-3f-work-checkbox-3::after,
+#cbtc-3f-work-price-4:checked ~ table .cbtc-3f-work-checkbox-4::after,
+#cbtc-3f-work-price-5:checked ~ table .cbtc-3f-work-checkbox-5::after,
+#cbtc-3f-work-price-6:checked ~ table .cbtc-3f-work-checkbox-6::after,
+#cbtc-3f-work-price-7:checked ~ table .cbtc-3f-work-checkbox-7::after,
+#cbtc-3f-work-price-8:checked ~ table .cbtc-3f-work-checkbox-8::after,
+#cbtc-3f-work-price-9:checked ~ table .cbtc-3f-work-checkbox-9::after,
+#cbtc-3f-work-price-10:checked ~ table .cbtc-3f-work-checkbox-10::after,
+#cbtc-3f-work-price-11:checked ~ table .cbtc-3f-work-checkbox-11::after,
+#cbtc-3f-work-price-12:checked ~ table .cbtc-3f-work-checkbox-12::after,
+#cbtc-3f-work-price-13:checked ~ table .cbtc-3f-work-checkbox-13::after,
+#cbtc-3f-work-price-14:checked ~ table .cbtc-3f-work-checkbox-14::after,
+#cbtc-3f-work-price-15:checked ~ table .cbtc-3f-work-checkbox-15::after {
+	content: "";
+	background-image: url(../img/Vector3.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 1vw;
+	height: 1vw;
+	position: absolute;
+	top: -0.3vw;
+	left: 0.2vw
+}
+
+#cbtc-3f-work-price-1:checked ~ table .cbtc-3fp-name-1,
+#cbtc-3f-work-price-2:checked ~ table .cbtc-3fp-name-2,
+#cbtc-3f-work-price-3:checked ~ table .cbtc-3fp-name-3,
+#cbtc-3f-work-price-4:checked ~ table .cbtc-3fp-name-4,
+#cbtc-3f-work-price-5:checked ~ table .cbtc-3fp-name-5,
+#cbtc-3f-work-price-6:checked ~ table .cbtc-3fp-name-6,
+#cbtc-3f-work-price-7:checked ~ table .cbtc-3fp-name-7,
+#cbtc-3f-work-price-8:checked ~ table .cbtc-3fp-name-8,
+#cbtc-3f-work-price-9:checked ~ table .cbtc-3fp-name-9,
+#cbtc-3f-work-price-10:checked ~ table .cbtc-3fp-name-10,
+#cbtc-3f-work-price-11:checked ~ table .cbtc-3fp-name-11,
+#cbtc-3f-work-price-12:checked ~ table .cbtc-3fp-name-12,
+#cbtc-3f-work-price-13:checked ~ table .cbtc-3fp-name-13,
+#cbtc-3f-work-price-14:checked ~ table .cbtc-3fp-name-14,
+#cbtc-3f-work-price-15:checked ~ table .cbtc-3fp-name-15 {
+	font-weight: 700;
+	background-color: #F0F5F9;
+}
+
+/*
+TOYOTA LAND CRUISER PRADO
+*/
+
+.cbtc-4-radio-front:checked ~ .cbtc-container .cbtc-4c-radio-front,
+.cbtc-4-radio-back:checked ~ .cbtc-container .cbtc-4c-radio-back,
+.cbtc-4-radio-steering:checked ~ .cbtc-container .cbtc-4c-radio-steering,
+.cbtc-4-radio-brake:checked ~ .cbtc-container .cbtc-4c-radio-brake,
+.cbtc-4-radio-transmission:checked ~ .cbtc-container .cbtc-4c-radio-transmission,
+.cbtc-4-radio-cooling:checked ~ .cbtc-container .cbtc-4c-radio-cooling,
+.cbtc-4-radio-engine:checked ~ .cbtc-container .cbtc-4c-radio-engine,
+.cbtc-4-radio-electrician:checked ~ .cbtc-container .cbtc-4c-radio-electrician,
+.cbtc-4-radio-fuel:checked ~ .cbtc-container .cbtc-4c-radio-fuel {
+	background-color: rgba(226, 226, 226, 0.8);
+	border-left: 0.4vw solid #DA251C;
+	font-weight: 700;
+}
+
+.cbtc-4f-btn {
+	cursor: pointer;
+	width: 19.3vw;
+	height: 4.8vw;
+	color: #fff;
+	background-color: #AF120A;
+	border: none;
+	text-transform: uppercase;
+}
+
+.cbtc-4f-work-checkbox {
+	width: 1.2vw;
+	height: 1.2vw;
+	border: 0.1vw solid #cccccc;
+	border-radius: 0.2vw;
+	cursor: pointer;
+	position: relative;
+}
+
+.cbtc-4-radio-front:checked ~ .cbtc-4-form .cbtc-4f-front-price,
+.cbtc-4-radio-back:checked ~ .cbtc-4-form .cbtc-4f-back-price,
+.cbtc-4-radio-steering:checked ~ .cbtc-4-form .cbtc-4f-steering-price,
+.cbtc-4-radio-brake:checked ~ .cbtc-4-form .cbtc-4f-brake-price,
+.cbtc-4-radio-transmission:checked ~ .cbtc-4-form .cbtc-4f-transmission-price,
+.cbtc-4-radio-cooling:checked ~ .cbtc-4-form .cbtc-4f-cooling-price,
+.cbtc-4-radio-engine:checked ~ .cbtc-4-form .cbtc-4f-engine-price,
+.cbtc-4-radio-electrician:checked ~ .cbtc-4-form .cbtc-4f-electrician-price,
+.cbtc-4-radio-fuel:checked ~ .cbtc-4-form .cbtc-4f-fuel-price {
+	display: block;
+}
+
+#cbtc-4f-work-price-1:checked ~ table .cbtc-4f-work-checkbox-1::after,
+#cbtc-4f-work-price-2:checked ~ table .cbtc-4f-work-checkbox-2::after,
+#cbtc-4f-work-price-3:checked ~ table .cbtc-4f-work-checkbox-3::after,
+#cbtc-4f-work-price-4:checked ~ table .cbtc-4f-work-checkbox-4::after,
+#cbtc-4f-work-price-5:checked ~ table .cbtc-4f-work-checkbox-5::after,
+#cbtc-4f-work-price-6:checked ~ table .cbtc-4f-work-checkbox-6::after,
+#cbtc-4f-work-price-7:checked ~ table .cbtc-4f-work-checkbox-7::after,
+#cbtc-4f-work-price-8:checked ~ table .cbtc-4f-work-checkbox-8::after,
+#cbtc-4f-work-price-9:checked ~ table .cbtc-4f-work-checkbox-9::after,
+#cbtc-4f-work-price-10:checked ~ table .cbtc-4f-work-checkbox-10::after,
+#cbtc-4f-work-price-11:checked ~ table .cbtc-4f-work-checkbox-11::after,
+#cbtc-4f-work-price-12:checked ~ table .cbtc-4f-work-checkbox-12::after,
+#cbtc-4f-work-price-13:checked ~ table .cbtc-4f-work-checkbox-13::after,
+#cbtc-4f-work-price-14:checked ~ table .cbtc-4f-work-checkbox-14::after,
+#cbtc-4f-work-price-15:checked ~ table .cbtc-4f-work-checkbox-15::after {
+	content: "";
+	background-image: url(../img/Vector3.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 1vw;
+	height: 1vw;
+	position: absolute;
+	top: -0.3vw;
+	left: 0.2vw
+}
+
+#cbtc-4f-work-price-1:checked ~ table .cbtc-4fp-name-1,
+#cbtc-4f-work-price-2:checked ~ table .cbtc-4fp-name-2,
+#cbtc-4f-work-price-3:checked ~ table .cbtc-4fp-name-3,
+#cbtc-4f-work-price-4:checked ~ table .cbtc-4fp-name-4,
+#cbtc-4f-work-price-5:checked ~ table .cbtc-4fp-name-5,
+#cbtc-4f-work-price-6:checked ~ table .cbtc-4fp-name-6,
+#cbtc-4f-work-price-7:checked ~ table .cbtc-4fp-name-7,
+#cbtc-4f-work-price-8:checked ~ table .cbtc-4fp-name-8,
+#cbtc-4f-work-price-9:checked ~ table .cbtc-4fp-name-9,
+#cbtc-4f-work-price-10:checked ~ table .cbtc-4fp-name-10,
+#cbtc-4f-work-price-11:checked ~ table .cbtc-4fp-name-11,
+#cbtc-4f-work-price-12:checked ~ table .cbtc-4fp-name-12,
+#cbtc-4f-work-price-13:checked ~ table .cbtc-4fp-name-13,
+#cbtc-4f-work-price-14:checked ~ table .cbtc-4fp-name-14,
+#cbtc-4f-work-price-15:checked ~ table .cbtc-4fp-name-15 {
+	font-weight: 700;
+	background-color: #F0F5F9;
+}
+
+/*
+TOYOTA HIGHLANDER
+*/
+
+.cbtc-5-radio-front:checked ~ .cbtc-container .cbtc-5c-radio-front,
+.cbtc-5-radio-back:checked ~ .cbtc-container .cbtc-5c-radio-back,
+.cbtc-5-radio-steering:checked ~ .cbtc-container .cbtc-5c-radio-steering,
+.cbtc-5-radio-brake:checked ~ .cbtc-container .cbtc-5c-radio-brake,
+.cbtc-5-radio-transmission:checked ~ .cbtc-container .cbtc-5c-radio-transmission,
+.cbtc-5-radio-cooling:checked ~ .cbtc-container .cbtc-5c-radio-cooling,
+.cbtc-5-radio-engine:checked ~ .cbtc-container .cbtc-5c-radio-engine,
+.cbtc-5-radio-electrician:checked ~ .cbtc-container .cbtc-5c-radio-electrician,
+.cbtc-5-radio-fuel:checked ~ .cbtc-container .cbtc-5c-radio-fuel {
+	background-color: rgba(226, 226, 226, 0.8);
+	border-left: 0.4vw solid #DA251C;
+	font-weight: 700;
+}
+
+.cbtc-5f-btn {
+	cursor: pointer;
+	width: 19.3vw;
+	height: 4.8vw;
+	color: #fff;
+	background-color: #AF120A;
+	border: none;
+	text-transform: uppercase;
+}
+
+.cbtc-5f-work-checkbox {
+	width: 1.2vw;
+	height: 1.2vw;
+	border: 0.1vw solid #cccccc;
+	border-radius: 0.2vw;
+	cursor: pointer;
+	position: relative;
+}
+
+.cbtc-5-radio-front:checked ~ .cbtc-5-form .cbtc-5f-front-price,
+.cbtc-5-radio-back:checked ~ .cbtc-5-form .cbtc-5f-back-price,
+.cbtc-5-radio-steering:checked ~ .cbtc-5-form .cbtc-5f-steering-price,
+.cbtc-5-radio-brake:checked ~ .cbtc-5-form .cbtc-5f-brake-price,
+.cbtc-5-radio-transmission:checked ~ .cbtc-5-form .cbtc-5f-transmission-price,
+.cbtc-5-radio-cooling:checked ~ .cbtc-5-form .cbtc-5f-cooling-price,
+.cbtc-5-radio-engine:checked ~ .cbtc-5-form .cbtc-5f-engine-price,
+.cbtc-5-radio-electrician:checked ~ .cbtc-5-form .cbtc-5f-electrician-price,
+.cbtc-5-radio-fuel:checked ~ .cbtc-5-form .cbtc-5f-fuel-price {
+	display: block;
+}
+
+#cbtc-5f-work-price-1:checked ~ table .cbtc-5f-work-checkbox-1::after,
+#cbtc-5f-work-price-2:checked ~ table .cbtc-5f-work-checkbox-2::after,
+#cbtc-5f-work-price-3:checked ~ table .cbtc-5f-work-checkbox-3::after,
+#cbtc-5f-work-price-4:checked ~ table .cbtc-5f-work-checkbox-4::after,
+#cbtc-5f-work-price-5:checked ~ table .cbtc-5f-work-checkbox-5::after,
+#cbtc-5f-work-price-6:checked ~ table .cbtc-5f-work-checkbox-6::after,
+#cbtc-5f-work-price-7:checked ~ table .cbtc-5f-work-checkbox-7::after,
+#cbtc-5f-work-price-8:checked ~ table .cbtc-5f-work-checkbox-8::after,
+#cbtc-5f-work-price-9:checked ~ table .cbtc-5f-work-checkbox-9::after,
+#cbtc-5f-work-price-10:checked ~ table .cbtc-5f-work-checkbox-10::after,
+#cbtc-5f-work-price-11:checked ~ table .cbtc-5f-work-checkbox-11::after,
+#cbtc-5f-work-price-12:checked ~ table .cbtc-5f-work-checkbox-12::after,
+#cbtc-5f-work-price-13:checked ~ table .cbtc-5f-work-checkbox-13::after,
+#cbtc-5f-work-price-14:checked ~ table .cbtc-5f-work-checkbox-14::after,
+#cbtc-5f-work-price-15:checked ~ table .cbtc-5f-work-checkbox-15::after {
+	content: "";
+	background-image: url(../img/Vector3.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 1vw;
+	height: 1vw;
+	position: absolute;
+	top: -0.3vw;
+	left: 0.2vw
+}
+
+#cbtc-5f-work-price-1:checked ~ table .cbtc-5fp-name-1,
+#cbtc-5f-work-price-2:checked ~ table .cbtc-5fp-name-2,
+#cbtc-5f-work-price-3:checked ~ table .cbtc-5fp-name-3,
+#cbtc-5f-work-price-4:checked ~ table .cbtc-5fp-name-4,
+#cbtc-5f-work-price-5:checked ~ table .cbtc-5fp-name-5,
+#cbtc-5f-work-price-6:checked ~ table .cbtc-5fp-name-6,
+#cbtc-5f-work-price-7:checked ~ table .cbtc-5fp-name-7,
+#cbtc-5f-work-price-8:checked ~ table .cbtc-5fp-name-8,
+#cbtc-5f-work-price-9:checked ~ table .cbtc-5fp-name-9,
+#cbtc-5f-work-price-10:checked ~ table .cbtc-5fp-name-10,
+#cbtc-5f-work-price-11:checked ~ table .cbtc-5fp-name-11,
+#cbtc-5f-work-price-12:checked ~ table .cbtc-5fp-name-12,
+#cbtc-5f-work-price-13:checked ~ table .cbtc-5fp-name-13,
+#cbtc-5f-work-price-14:checked ~ table .cbtc-5fp-name-14,
+#cbtc-5f-work-price-15:checked ~ table .cbtc-5fp-name-15 {
+	font-weight: 700;
+	background-color: #F0F5F9;
+}
+
+/*
+TOYOTA CAMRY
+*/
+
+.cbtc-6-radio-front:checked ~ .cbtc-container .cbtc-6c-radio-front,
+.cbtc-6-radio-back:checked ~ .cbtc-container .cbtc-6c-radio-back,
+.cbtc-6-radio-steering:checked ~ .cbtc-container .cbtc-6c-radio-steering,
+.cbtc-6-radio-brake:checked ~ .cbtc-container .cbtc-6c-radio-brake,
+.cbtc-6-radio-transmission:checked ~ .cbtc-container .cbtc-6c-radio-transmission,
+.cbtc-6-radio-cooling:checked ~ .cbtc-container .cbtc-6c-radio-cooling,
+.cbtc-6-radio-engine:checked ~ .cbtc-container .cbtc-6c-radio-engine,
+.cbtc-6-radio-electrician:checked ~ .cbtc-container .cbtc-6c-radio-electrician,
+.cbtc-6-radio-fuel:checked ~ .cbtc-container .cbtc-6c-radio-fuel {
+	background-color: rgba(226, 226, 226, 0.8);
+	border-left: 0.4vw solid #DA251C;
+	font-weight: 700;
+}
+
+.cbtc-6f-btn {
+	cursor: pointer;
+	width: 19.3vw;
+	height: 4.8vw;
+	color: #fff;
+	background-color: #AF120A;
+	border: none;
+	text-transform: uppercase;
+}
+
+.cbtc-6f-work-checkbox {
+	width: 1.2vw;
+	height: 1.2vw;
+	border: 0.1vw solid #cccccc;
+	border-radius: 0.2vw;
+	cursor: pointer;
+	position: relative;
+}
+
+.cbtc-6-radio-front:checked ~ .cbtc-6-form .cbtc-6f-front-price,
+.cbtc-6-radio-back:checked ~ .cbtc-6-form .cbtc-6f-back-price,
+.cbtc-6-radio-steering:checked ~ .cbtc-6-form .cbtc-6f-steering-price,
+.cbtc-6-radio-brake:checked ~ .cbtc-6-form .cbtc-6f-brake-price,
+.cbtc-6-radio-transmission:checked ~ .cbtc-6-form .cbtc-6f-transmission-price,
+.cbtc-6-radio-cooling:checked ~ .cbtc-6-form .cbtc-6f-cooling-price,
+.cbtc-6-radio-engine:checked ~ .cbtc-6-form .cbtc-6f-engine-price,
+.cbtc-6-radio-electrician:checked ~ .cbtc-6-form .cbtc-6f-electrician-price,
+.cbtc-6-radio-fuel:checked ~ .cbtc-6-form .cbtc-6f-fuel-price {
+	display: block;
+}
+
+#cbtc-6f-work-price-1:checked ~ table .cbtc-6f-work-checkbox-1::after,
+#cbtc-6f-work-price-2:checked ~ table .cbtc-6f-work-checkbox-2::after,
+#cbtc-6f-work-price-3:checked ~ table .cbtc-6f-work-checkbox-3::after,
+#cbtc-6f-work-price-4:checked ~ table .cbtc-6f-work-checkbox-4::after,
+#cbtc-6f-work-price-5:checked ~ table .cbtc-6f-work-checkbox-5::after,
+#cbtc-6f-work-price-6:checked ~ table .cbtc-6f-work-checkbox-6::after,
+#cbtc-6f-work-price-7:checked ~ table .cbtc-6f-work-checkbox-7::after,
+#cbtc-6f-work-price-8:checked ~ table .cbtc-6f-work-checkbox-8::after,
+#cbtc-6f-work-price-9:checked ~ table .cbtc-6f-work-checkbox-9::after,
+#cbtc-6f-work-price-10:checked ~ table .cbtc-6f-work-checkbox-10::after,
+#cbtc-6f-work-price-11:checked ~ table .cbtc-6f-work-checkbox-11::after,
+#cbtc-6f-work-price-12:checked ~ table .cbtc-6f-work-checkbox-12::after,
+#cbtc-6f-work-price-13:checked ~ table .cbtc-6f-work-checkbox-13::after,
+#cbtc-6f-work-price-14:checked ~ table .cbtc-6f-work-checkbox-14::after,
+#cbtc-6f-work-price-15:checked ~ table .cbtc-6f-work-checkbox-15::after {
+	content: "";
+	background-image: url(../img/Vector3.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 1vw;
+	height: 1vw;
+	position: absolute;
+	top: -0.3vw;
+	left: 0.2vw
+}
+
+#cbtc-6f-work-price-1:checked ~ table .cbtc-6fp-name-1,
+#cbtc-6f-work-price-2:checked ~ table .cbtc-6fp-name-2,
+#cbtc-6f-work-price-3:checked ~ table .cbtc-6fp-name-3,
+#cbtc-6f-work-price-4:checked ~ table .cbtc-6fp-name-4,
+#cbtc-6f-work-price-5:checked ~ table .cbtc-6fp-name-5,
+#cbtc-6f-work-price-6:checked ~ table .cbtc-6fp-name-6,
+#cbtc-6f-work-price-7:checked ~ table .cbtc-6fp-name-7,
+#cbtc-6f-work-price-8:checked ~ table .cbtc-6fp-name-8,
+#cbtc-6f-work-price-9:checked ~ table .cbtc-6fp-name-9,
+#cbtc-6f-work-price-10:checked ~ table .cbtc-6fp-name-10,
+#cbtc-6f-work-price-11:checked ~ table .cbtc-6fp-name-11,
+#cbtc-6f-work-price-12:checked ~ table .cbtc-6fp-name-12,
+#cbtc-6f-work-price-13:checked ~ table .cbtc-6fp-name-13,
+#cbtc-6f-work-price-14:checked ~ table .cbtc-6fp-name-14,
+#cbtc-6f-work-price-15:checked ~ table .cbtc-6fp-name-15 {
+	font-weight: 700;
+	background-color: #F0F5F9;
+}
+
+/*
+lexus LAND CRUISER
+*/
+
+.cblc-1-radio-front:checked ~ .cblc-container .cblc-1c-radio-front,
+.cblc-1-radio-back:checked ~ .cblc-container .cblc-1c-radio-back,
+.cblc-1-radio-steering:checked ~ .cblc-container .cblc-1c-radio-steering,
+.cblc-1-radio-brake:checked ~ .cblc-container .cblc-1c-radio-brake,
+.cblc-1-radio-transmission:checked ~ .cblc-container .cblc-1c-radio-transmission,
+.cblc-1-radio-cooling:checked ~ .cblc-container .cblc-1c-radio-cooling,
+.cblc-1-radio-engine:checked ~ .cblc-container .cblc-1c-radio-engine,
+.cblc-1-radio-electrician:checked ~ .cblc-container .cblc-1c-radio-electrician,
+.cblc-1-radio-fuel:checked ~ .cblc-container .cblc-1c-radio-fuel {
+	background-color: rgba(226, 226, 226, 0.8);
+	border-left: 0.4vw solid #DA251C;
+	font-weight: 700;
+}
+
+.cblc-1f-btn {
+	cursor: pointer;
+	width: 19.3vw;
+	height: 4.8vw;
+	color: #fff;
+	background-color: #AF120A;
+	border: none;
+	text-transform: uppercase;
+}
+
+.cblc-1f-work-checkbox {
+	width: 1.2vw;
+	height: 1.2vw;
+	border: 0.1vw solid #cccccc;
+	border-radius: 0.2vw;
+	cursor: pointer;
+	position: relative;
+}
+
+.cblc-1-radio-front:checked ~ .cblc-1-form .cblc-1f-front-price,
+.cblc-1-radio-back:checked ~ .cblc-1-form .cblc-1f-back-price,
+.cblc-1-radio-steering:checked ~ .cblc-1-form .cblc-1f-steering-price,
+.cblc-1-radio-brake:checked ~ .cblc-1-form .cblc-1f-brake-price,
+.cblc-1-radio-transmission:checked ~ .cblc-1-form .cblc-1f-transmission-price,
+.cblc-1-radio-cooling:checked ~ .cblc-1-form .cblc-1f-cooling-price,
+.cblc-1-radio-engine:checked ~ .cblc-1-form .cblc-1f-engine-price,
+.cblc-1-radio-electrician:checked ~ .cblc-1-form .cblc-1f-electrician-price,
+.cblc-1-radio-fuel:checked ~ .cblc-1-form .cblc-1f-fuel-price {
+	display: block;
+}
+
+#cblc-1f-work-price-1:checked ~ table .cblc-1f-work-checkbox-1::after,
+#cblc-1f-work-price-2:checked ~ table .cblc-1f-work-checkbox-2::after,
+#cblc-1f-work-price-3:checked ~ table .cblc-1f-work-checkbox-3::after,
+#cblc-1f-work-price-4:checked ~ table .cblc-1f-work-checkbox-4::after,
+#cblc-1f-work-price-5:checked ~ table .cblc-1f-work-checkbox-5::after,
+#cblc-1f-work-price-6:checked ~ table .cblc-1f-work-checkbox-6::after,
+#cblc-1f-work-price-7:checked ~ table .cblc-1f-work-checkbox-7::after,
+#cblc-1f-work-price-8:checked ~ table .cblc-1f-work-checkbox-8::after,
+#cblc-1f-work-price-9:checked ~ table .cblc-1f-work-checkbox-9::after,
+#cblc-1f-work-price-10:checked ~ table .cblc-1f-work-checkbox-10::after,
+#cblc-1f-work-price-11:checked ~ table .cblc-1f-work-checkbox-11::after,
+#cblc-1f-work-price-12:checked ~ table .cblc-1f-work-checkbox-12::after,
+#cblc-1f-work-price-13:checked ~ table .cblc-1f-work-checkbox-13::after,
+#cblc-1f-work-price-14:checked ~ table .cblc-1f-work-checkbox-14::after,
+#cblc-1f-work-price-15:checked ~ table .cblc-1f-work-checkbox-15::after {
+	content: "";
+	background-image: url(../img/Vector3.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 1vw;
+	height: 1vw;
+	position: absolute;
+	top: -0.3vw;
+	left: 0.2vw
+}
+
+#cblc-1f-work-price-1:checked ~ table .cblc-1fp-name-1,
+#cblc-1f-work-price-2:checked ~ table .cblc-1fp-name-2,
+#cblc-1f-work-price-3:checked ~ table .cblc-1fp-name-3,
+#cblc-1f-work-price-4:checked ~ table .cblc-1fp-name-4,
+#cblc-1f-work-price-5:checked ~ table .cblc-1fp-name-5,
+#cblc-1f-work-price-6:checked ~ table .cblc-1fp-name-6,
+#cblc-1f-work-price-7:checked ~ table .cblc-1fp-name-7,
+#cblc-1f-work-price-8:checked ~ table .cblc-1fp-name-8,
+#cblc-1f-work-price-9:checked ~ table .cblc-1fp-name-9,
+#cblc-1f-work-price-10:checked ~ table .cblc-1fp-name-10,
+#cblc-1f-work-price-11:checked ~ table .cblc-1fp-name-11,
+#cblc-1f-work-price-12:checked ~ table .cblc-1fp-name-12,
+#cblc-1f-work-price-13:checked ~ table .cblc-1fp-name-13,
+#cblc-1f-work-price-14:checked ~ table .cblc-1fp-name-14,
+#cblc-1f-work-price-15:checked ~ table .cblc-1fp-name-15 {
+	font-weight: 700;
+	background-color: #F0F5F9;
+}
+
+/*
+lexus SEQUOIA
+*/
+
+.cblc-2-radio-front:checked ~ .cblc-container .cblc-2c-radio-front,
+.cblc-2-radio-back:checked ~ .cblc-container .cblc-2c-radio-back,
+.cblc-2-radio-steering:checked ~ .cblc-container .cblc-2c-radio-steering,
+.cblc-2-radio-brake:checked ~ .cblc-container .cblc-2c-radio-brake,
+.cblc-2-radio-transmission:checked ~ .cblc-container .cblc-2c-radio-transmission,
+.cblc-2-radio-cooling:checked ~ .cblc-container .cblc-2c-radio-cooling,
+.cblc-2-radio-engine:checked ~ .cblc-container .cblc-2c-radio-engine,
+.cblc-2-radio-electrician:checked ~ .cblc-container .cblc-2c-radio-electrician,
+.cblc-2-radio-fuel:checked ~ .cblc-container .cblc-2c-radio-fuel {
+	background-color: rgba(226, 226, 226, 0.8);
+	border-left: 0.4vw solid #DA251C;
+	font-weight: 700;
+}
+
+.cblc-2f-btn {
+	cursor: pointer;
+	width: 19.3vw;
+	height: 4.8vw;
+	color: #fff;
+	background-color: #AF120A;
+	border: none;
+	text-transform: uppercase;
+}
+
+.cblc-2f-work-checkbox {
+	width: 1.2vw;
+	height: 1.2vw;
+	border: 0.1vw solid #cccccc;
+	border-radius: 0.2vw;
+	cursor: pointer;
+	position: relative;
+}
+
+.cblc-2-radio-front:checked ~ .cblc-2-form .cblc-2f-front-price,
+.cblc-2-radio-back:checked ~ .cblc-2-form .cblc-2f-back-price,
+.cblc-2-radio-steering:checked ~ .cblc-2-form .cblc-2f-steering-price,
+.cblc-2-radio-brake:checked ~ .cblc-2-form .cblc-2f-brake-price,
+.cblc-2-radio-transmission:checked ~ .cblc-2-form .cblc-2f-transmission-price,
+.cblc-2-radio-cooling:checked ~ .cblc-2-form .cblc-2f-cooling-price,
+.cblc-2-radio-engine:checked ~ .cblc-2-form .cblc-2f-engine-price,
+.cblc-2-radio-electrician:checked ~ .cblc-2-form .cblc-2f-electrician-price,
+.cblc-2-radio-fuel:checked ~ .cblc-2-form .cblc-2f-fuel-price {
+	display: block;
+}
+
+#cblc-2f-work-price-1:checked ~ table .cblc-2f-work-checkbox-1::after,
+#cblc-2f-work-price-2:checked ~ table .cblc-2f-work-checkbox-2::after,
+#cblc-2f-work-price-3:checked ~ table .cblc-2f-work-checkbox-3::after,
+#cblc-2f-work-price-4:checked ~ table .cblc-2f-work-checkbox-4::after,
+#cblc-2f-work-price-5:checked ~ table .cblc-2f-work-checkbox-5::after,
+#cblc-2f-work-price-6:checked ~ table .cblc-2f-work-checkbox-6::after,
+#cblc-2f-work-price-7:checked ~ table .cblc-2f-work-checkbox-7::after,
+#cblc-2f-work-price-8:checked ~ table .cblc-2f-work-checkbox-8::after,
+#cblc-2f-work-price-9:checked ~ table .cblc-2f-work-checkbox-9::after,
+#cblc-2f-work-price-10:checked ~ table .cblc-2f-work-checkbox-10::after,
+#cblc-2f-work-price-11:checked ~ table .cblc-2f-work-checkbox-11::after,
+#cblc-2f-work-price-12:checked ~ table .cblc-2f-work-checkbox-12::after,
+#cblc-2f-work-price-13:checked ~ table .cblc-2f-work-checkbox-13::after,
+#cblc-2f-work-price-14:checked ~ table .cblc-2f-work-checkbox-14::after,
+#cblc-2f-work-price-15:checked ~ table .cblc-2f-work-checkbox-15::after {
+	content: "";
+	background-image: url(../img/Vector3.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 1vw;
+	height: 1vw;
+	position: absolute;
+	top: -0.3vw;
+	left: 0.2vw
+}
+
+#cblc-2f-work-price-1:checked ~ table .cblc-2fp-name-1,
+#cblc-2f-work-price-2:checked ~ table .cblc-2fp-name-2,
+#cblc-2f-work-price-3:checked ~ table .cblc-2fp-name-3,
+#cblc-2f-work-price-4:checked ~ table .cblc-2fp-name-4,
+#cblc-2f-work-price-5:checked ~ table .cblc-2fp-name-5,
+#cblc-2f-work-price-6:checked ~ table .cblc-2fp-name-6,
+#cblc-2f-work-price-7:checked ~ table .cblc-2fp-name-7,
+#cblc-2f-work-price-8:checked ~ table .cblc-2fp-name-8,
+#cblc-2f-work-price-9:checked ~ table .cblc-2fp-name-9,
+#cblc-2f-work-price-10:checked ~ table .cblc-2fp-name-10,
+#cblc-2f-work-price-11:checked ~ table .cblc-2fp-name-11,
+#cblc-2f-work-price-12:checked ~ table .cblc-2fp-name-12,
+#cblc-2f-work-price-13:checked ~ table .cblc-2fp-name-13,
+#cblc-2f-work-price-14:checked ~ table .cblc-2fp-name-14,
+#cblc-2f-work-price-15:checked ~ table .cblc-2fp-name-15 {
+	font-weight: 700;
+	background-color: #F0F5F9;
+}
+
+/*
+lexus TUNDRA
+*/
+
+.cblc-3-radio-front:checked ~ .cblc-container .cblc-3c-radio-front,
+.cblc-3-radio-back:checked ~ .cblc-container .cblc-3c-radio-back,
+.cblc-3-radio-steering:checked ~ .cblc-container .cblc-3c-radio-steering,
+.cblc-3-radio-brake:checked ~ .cblc-container .cblc-3c-radio-brake,
+.cblc-3-radio-transmission:checked ~ .cblc-container .cblc-3c-radio-transmission,
+.cblc-3-radio-cooling:checked ~ .cblc-container .cblc-3c-radio-cooling,
+.cblc-3-radio-engine:checked ~ .cblc-container .cblc-3c-radio-engine,
+.cblc-3-radio-electrician:checked ~ .cblc-container .cblc-3c-radio-electrician,
+.cblc-3-radio-fuel:checked ~ .cblc-container .cblc-3c-radio-fuel {
+	background-color: rgba(226, 226, 226, 0.8);
+	border-left: 0.4vw solid #DA251C;
+	font-weight: 700;
+}
+
+.cblc-3f-btn {
+	cursor: pointer;
+	width: 19.3vw;
+	height: 4.8vw;
+	color: #fff;
+	background-color: #AF120A;
+	border: none;
+	text-transform: uppercase;
+}
+
+.cblc-3f-work-checkbox {
+	width: 1.2vw;
+	height: 1.2vw;
+	border: 0.1vw solid #cccccc;
+	border-radius: 0.2vw;
+	cursor: pointer;
+	position: relative;
+}
+
+.cblc-3-radio-front:checked ~ .cblc-3-form .cblc-3f-front-price,
+.cblc-3-radio-back:checked ~ .cblc-3-form .cblc-3f-back-price,
+.cblc-3-radio-steering:checked ~ .cblc-3-form .cblc-3f-steering-price,
+.cblc-3-radio-brake:checked ~ .cblc-3-form .cblc-3f-brake-price,
+.cblc-3-radio-transmission:checked ~ .cblc-3-form .cblc-3f-transmission-price,
+.cblc-3-radio-cooling:checked ~ .cblc-3-form .cblc-3f-cooling-price,
+.cblc-3-radio-engine:checked ~ .cblc-3-form .cblc-3f-engine-price,
+.cblc-3-radio-electrician:checked ~ .cblc-3-form .cblc-3f-electrician-price,
+.cblc-3-radio-fuel:checked ~ .cblc-3-form .cblc-3f-fuel-price {
+	display: block;
+}
+
+#cblc-3f-work-price-1:checked ~ table .cblc-3f-work-checkbox-1::after,
+#cblc-3f-work-price-2:checked ~ table .cblc-3f-work-checkbox-2::after,
+#cblc-3f-work-price-3:checked ~ table .cblc-3f-work-checkbox-3::after,
+#cblc-3f-work-price-4:checked ~ table .cblc-3f-work-checkbox-4::after,
+#cblc-3f-work-price-5:checked ~ table .cblc-3f-work-checkbox-5::after,
+#cblc-3f-work-price-6:checked ~ table .cblc-3f-work-checkbox-6::after,
+#cblc-3f-work-price-7:checked ~ table .cblc-3f-work-checkbox-7::after,
+#cblc-3f-work-price-8:checked ~ table .cblc-3f-work-checkbox-8::after,
+#cblc-3f-work-price-9:checked ~ table .cblc-3f-work-checkbox-9::after,
+#cblc-3f-work-price-10:checked ~ table .cblc-3f-work-checkbox-10::after,
+#cblc-3f-work-price-11:checked ~ table .cblc-3f-work-checkbox-11::after,
+#cblc-3f-work-price-12:checked ~ table .cblc-3f-work-checkbox-12::after,
+#cblc-3f-work-price-13:checked ~ table .cblc-3f-work-checkbox-13::after,
+#cblc-3f-work-price-14:checked ~ table .cblc-3f-work-checkbox-14::after,
+#cblc-3f-work-price-15:checked ~ table .cblc-3f-work-checkbox-15::after {
+	content: "";
+	background-image: url(../img/Vector3.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 1vw;
+	height: 1vw;
+	position: absolute;
+	top: -0.3vw;
+	left: 0.2vw
+}
+
+#cblc-3f-work-price-1:checked ~ table .cblc-3fp-name-1,
+#cblc-3f-work-price-2:checked ~ table .cblc-3fp-name-2,
+#cblc-3f-work-price-3:checked ~ table .cblc-3fp-name-3,
+#cblc-3f-work-price-4:checked ~ table .cblc-3fp-name-4,
+#cblc-3f-work-price-5:checked ~ table .cblc-3fp-name-5,
+#cblc-3f-work-price-6:checked ~ table .cblc-3fp-name-6,
+#cblc-3f-work-price-7:checked ~ table .cblc-3fp-name-7,
+#cblc-3f-work-price-8:checked ~ table .cblc-3fp-name-8,
+#cblc-3f-work-price-9:checked ~ table .cblc-3fp-name-9,
+#cblc-3f-work-price-10:checked ~ table .cblc-3fp-name-10,
+#cblc-3f-work-price-11:checked ~ table .cblc-3fp-name-11,
+#cblc-3f-work-price-12:checked ~ table .cblc-3fp-name-12,
+#cblc-3f-work-price-13:checked ~ table .cblc-3fp-name-13,
+#cblc-3f-work-price-14:checked ~ table .cblc-3fp-name-14,
+#cblc-3f-work-price-15:checked ~ table .cblc-3fp-name-15 {
+	font-weight: 700;
+	background-color: #F0F5F9;
+}
+
+/*
+lexus LAND CRUISER PRADO
+*/
+
+.cblc-4-radio-front:checked ~ .cblc-container .cblc-4c-radio-front,
+.cblc-4-radio-back:checked ~ .cblc-container .cblc-4c-radio-back,
+.cblc-4-radio-steering:checked ~ .cblc-container .cblc-4c-radio-steering,
+.cblc-4-radio-brake:checked ~ .cblc-container .cblc-4c-radio-brake,
+.cblc-4-radio-transmission:checked ~ .cblc-container .cblc-4c-radio-transmission,
+.cblc-4-radio-cooling:checked ~ .cblc-container .cblc-4c-radio-cooling,
+.cblc-4-radio-engine:checked ~ .cblc-container .cblc-4c-radio-engine,
+.cblc-4-radio-electrician:checked ~ .cblc-container .cblc-4c-radio-electrician,
+.cblc-4-radio-fuel:checked ~ .cblc-container .cblc-4c-radio-fuel {
+	background-color: rgba(226, 226, 226, 0.8);
+	border-left: 0.4vw solid #DA251C;
+	font-weight: 700;
+}
+
+.cblc-4f-btn {
+	cursor: pointer;
+	width: 19.3vw;
+	height: 4.8vw;
+	color: #fff;
+	background-color: #AF120A;
+	border: none;
+	text-transform: uppercase;
+}
+
+.cblc-4f-work-checkbox {
+	width: 1.2vw;
+	height: 1.2vw;
+	border: 0.1vw solid #cccccc;
+	border-radius: 0.2vw;
+	cursor: pointer;
+	position: relative;
+}
+
+.cblc-4-radio-front:checked ~ .cblc-4-form .cblc-4f-front-price,
+.cblc-4-radio-back:checked ~ .cblc-4-form .cblc-4f-back-price,
+.cblc-4-radio-steering:checked ~ .cblc-4-form .cblc-4f-steering-price,
+.cblc-4-radio-brake:checked ~ .cblc-4-form .cblc-4f-brake-price,
+.cblc-4-radio-transmission:checked ~ .cblc-4-form .cblc-4f-transmission-price,
+.cblc-4-radio-cooling:checked ~ .cblc-4-form .cblc-4f-cooling-price,
+.cblc-4-radio-engine:checked ~ .cblc-4-form .cblc-4f-engine-price,
+.cblc-4-radio-electrician:checked ~ .cblc-4-form .cblc-4f-electrician-price,
+.cblc-4-radio-fuel:checked ~ .cblc-4-form .cblc-4f-fuel-price {
+	display: block;
+}
+
+#cblc-4f-work-price-1:checked ~ table .cblc-4f-work-checkbox-1::after,
+#cblc-4f-work-price-2:checked ~ table .cblc-4f-work-checkbox-2::after,
+#cblc-4f-work-price-3:checked ~ table .cblc-4f-work-checkbox-3::after,
+#cblc-4f-work-price-4:checked ~ table .cblc-4f-work-checkbox-4::after,
+#cblc-4f-work-price-5:checked ~ table .cblc-4f-work-checkbox-5::after,
+#cblc-4f-work-price-6:checked ~ table .cblc-4f-work-checkbox-6::after,
+#cblc-4f-work-price-7:checked ~ table .cblc-4f-work-checkbox-7::after,
+#cblc-4f-work-price-8:checked ~ table .cblc-4f-work-checkbox-8::after,
+#cblc-4f-work-price-9:checked ~ table .cblc-4f-work-checkbox-9::after,
+#cblc-4f-work-price-10:checked ~ table .cblc-4f-work-checkbox-10::after,
+#cblc-4f-work-price-11:checked ~ table .cblc-4f-work-checkbox-11::after,
+#cblc-4f-work-price-12:checked ~ table .cblc-4f-work-checkbox-12::after,
+#cblc-4f-work-price-13:checked ~ table .cblc-4f-work-checkbox-13::after,
+#cblc-4f-work-price-14:checked ~ table .cblc-4f-work-checkbox-14::after,
+#cblc-4f-work-price-15:checked ~ table .cblc-4f-work-checkbox-15::after {
+	content: "";
+	background-image: url(../img/Vector3.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 1vw;
+	height: 1vw;
+	position: absolute;
+	top: -0.3vw;
+	left: 0.2vw
+}
+
+#cblc-4f-work-price-1:checked ~ table .cblc-4fp-name-1,
+#cblc-4f-work-price-2:checked ~ table .cblc-4fp-name-2,
+#cblc-4f-work-price-3:checked ~ table .cblc-4fp-name-3,
+#cblc-4f-work-price-4:checked ~ table .cblc-4fp-name-4,
+#cblc-4f-work-price-5:checked ~ table .cblc-4fp-name-5,
+#cblc-4f-work-price-6:checked ~ table .cblc-4fp-name-6,
+#cblc-4f-work-price-7:checked ~ table .cblc-4fp-name-7,
+#cblc-4f-work-price-8:checked ~ table .cblc-4fp-name-8,
+#cblc-4f-work-price-9:checked ~ table .cblc-4fp-name-9,
+#cblc-4f-work-price-10:checked ~ table .cblc-4fp-name-10,
+#cblc-4f-work-price-11:checked ~ table .cblc-4fp-name-11,
+#cblc-4f-work-price-12:checked ~ table .cblc-4fp-name-12,
+#cblc-4f-work-price-13:checked ~ table .cblc-4fp-name-13,
+#cblc-4f-work-price-14:checked ~ table .cblc-4fp-name-14,
+#cblc-4f-work-price-15:checked ~ table .cblc-4fp-name-15 {
+	font-weight: 700;
+	background-color: #F0F5F9;
+}
+
+/*
+lexus HIGHLANDER
+*/
+
+.cblc-5-radio-front:checked ~ .cblc-container .cblc-5c-radio-front,
+.cblc-5-radio-back:checked ~ .cblc-container .cblc-5c-radio-back,
+.cblc-5-radio-steering:checked ~ .cblc-container .cblc-5c-radio-steering,
+.cblc-5-radio-brake:checked ~ .cblc-container .cblc-5c-radio-brake,
+.cblc-5-radio-transmission:checked ~ .cblc-container .cblc-5c-radio-transmission,
+.cblc-5-radio-cooling:checked ~ .cblc-container .cblc-5c-radio-cooling,
+.cblc-5-radio-engine:checked ~ .cblc-container .cblc-5c-radio-engine,
+.cblc-5-radio-electrician:checked ~ .cblc-container .cblc-5c-radio-electrician,
+.cblc-5-radio-fuel:checked ~ .cblc-container .cblc-5c-radio-fuel {
+	background-color: rgba(226, 226, 226, 0.8);
+	border-left: 0.4vw solid #DA251C;
+	font-weight: 700;
+}
+
+.cblc-5f-btn {
+	cursor: pointer;
+	width: 19.3vw;
+	height: 4.8vw;
+	color: #fff;
+	background-color: #AF120A;
+	border: none;
+	text-transform: uppercase;
+}
+
+.cblc-5f-work-checkbox {
+	width: 1.2vw;
+	height: 1.2vw;
+	border: 0.1vw solid #cccccc;
+	border-radius: 0.2vw;
+	cursor: pointer;
+	position: relative;
+}
+
+.cblc-5-radio-front:checked ~ .cblc-5-form .cblc-5f-front-price,
+.cblc-5-radio-back:checked ~ .cblc-5-form .cblc-5f-back-price,
+.cblc-5-radio-steering:checked ~ .cblc-5-form .cblc-5f-steering-price,
+.cblc-5-radio-brake:checked ~ .cblc-5-form .cblc-5f-brake-price,
+.cblc-5-radio-transmission:checked ~ .cblc-5-form .cblc-5f-transmission-price,
+.cblc-5-radio-cooling:checked ~ .cblc-5-form .cblc-5f-cooling-price,
+.cblc-5-radio-engine:checked ~ .cblc-5-form .cblc-5f-engine-price,
+.cblc-5-radio-electrician:checked ~ .cblc-5-form .cblc-5f-electrician-price,
+.cblc-5-radio-fuel:checked ~ .cblc-5-form .cblc-5f-fuel-price {
+	display: block;
+}
+
+#cblc-5f-work-price-1:checked ~ table .cblc-5f-work-checkbox-1::after,
+#cblc-5f-work-price-2:checked ~ table .cblc-5f-work-checkbox-2::after,
+#cblc-5f-work-price-3:checked ~ table .cblc-5f-work-checkbox-3::after,
+#cblc-5f-work-price-4:checked ~ table .cblc-5f-work-checkbox-4::after,
+#cblc-5f-work-price-5:checked ~ table .cblc-5f-work-checkbox-5::after,
+#cblc-5f-work-price-6:checked ~ table .cblc-5f-work-checkbox-6::after,
+#cblc-5f-work-price-7:checked ~ table .cblc-5f-work-checkbox-7::after,
+#cblc-5f-work-price-8:checked ~ table .cblc-5f-work-checkbox-8::after,
+#cblc-5f-work-price-9:checked ~ table .cblc-5f-work-checkbox-9::after,
+#cblc-5f-work-price-10:checked ~ table .cblc-5f-work-checkbox-10::after,
+#cblc-5f-work-price-11:checked ~ table .cblc-5f-work-checkbox-11::after,
+#cblc-5f-work-price-12:checked ~ table .cblc-5f-work-checkbox-12::after,
+#cblc-5f-work-price-13:checked ~ table .cblc-5f-work-checkbox-13::after,
+#cblc-5f-work-price-14:checked ~ table .cblc-5f-work-checkbox-14::after,
+#cblc-5f-work-price-15:checked ~ table .cblc-5f-work-checkbox-15::after {
+	content: "";
+	background-image: url(../img/Vector3.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 1vw;
+	height: 1vw;
+	position: absolute;
+	top: -0.3vw;
+	left: 0.2vw
+}
+
+#cblc-5f-work-price-1:checked ~ table .cblc-5fp-name-1,
+#cblc-5f-work-price-2:checked ~ table .cblc-5fp-name-2,
+#cblc-5f-work-price-3:checked ~ table .cblc-5fp-name-3,
+#cblc-5f-work-price-4:checked ~ table .cblc-5fp-name-4,
+#cblc-5f-work-price-5:checked ~ table .cblc-5fp-name-5,
+#cblc-5f-work-price-6:checked ~ table .cblc-5fp-name-6,
+#cblc-5f-work-price-7:checked ~ table .cblc-5fp-name-7,
+#cblc-5f-work-price-8:checked ~ table .cblc-5fp-name-8,
+#cblc-5f-work-price-9:checked ~ table .cblc-5fp-name-9,
+#cblc-5f-work-price-10:checked ~ table .cblc-5fp-name-10,
+#cblc-5f-work-price-11:checked ~ table .cblc-5fp-name-11,
+#cblc-5f-work-price-12:checked ~ table .cblc-5fp-name-12,
+#cblc-5f-work-price-13:checked ~ table .cblc-5fp-name-13,
+#cblc-5f-work-price-14:checked ~ table .cblc-5fp-name-14,
+#cblc-5f-work-price-15:checked ~ table .cblc-5fp-name-15 {
+	font-weight: 700;
+	background-color: #F0F5F9;
+}
+
+/*
+lexus CAMRY
+*/
+
+.cblc-6-radio-front:checked ~ .cblc-container .cblc-6c-radio-front,
+.cblc-6-radio-back:checked ~ .cblc-container .cblc-6c-radio-back,
+.cblc-6-radio-steering:checked ~ .cblc-container .cblc-6c-radio-steering,
+.cblc-6-radio-brake:checked ~ .cblc-container .cblc-6c-radio-brake,
+.cblc-6-radio-transmission:checked ~ .cblc-container .cblc-6c-radio-transmission,
+.cblc-6-radio-cooling:checked ~ .cblc-container .cblc-6c-radio-cooling,
+.cblc-6-radio-engine:checked ~ .cblc-container .cblc-6c-radio-engine,
+.cblc-6-radio-electrician:checked ~ .cblc-container .cblc-6c-radio-electrician,
+.cblc-6-radio-fuel:checked ~ .cblc-container .cblc-6c-radio-fuel {
+	background-color: rgba(226, 226, 226, 0.8);
+	border-left: 0.4vw solid #DA251C;
+	font-weight: 700;
+}
+
+.cblc-6f-btn {
+	cursor: pointer;
+	width: 19.3vw;
+	height: 4.8vw;
+	color: #fff;
+	background-color: #AF120A;
+	border: none;
+	text-transform: uppercase;
+}
+
+.cblc-6f-work-checkbox {
+	width: 1.2vw;
+	height: 1.2vw;
+	border: 0.1vw solid #cccccc;
+	border-radius: 0.2vw;
+	cursor: pointer;
+	position: relative;
+}
+
+.cblc-6-radio-front:checked ~ .cblc-6-form .cblc-6f-front-price,
+.cblc-6-radio-back:checked ~ .cblc-6-form .cblc-6f-back-price,
+.cblc-6-radio-steering:checked ~ .cblc-6-form .cblc-6f-steering-price,
+.cblc-6-radio-brake:checked ~ .cblc-6-form .cblc-6f-brake-price,
+.cblc-6-radio-transmission:checked ~ .cblc-6-form .cblc-6f-transmission-price,
+.cblc-6-radio-cooling:checked ~ .cblc-6-form .cblc-6f-cooling-price,
+.cblc-6-radio-engine:checked ~ .cblc-6-form .cblc-6f-engine-price,
+.cblc-6-radio-electrician:checked ~ .cblc-6-form .cblc-6f-electrician-price,
+.cblc-6-radio-fuel:checked ~ .cblc-6-form .cblc-6f-fuel-price {
+	display: block;
+}
+
+#cblc-6f-work-price-1:checked ~ table .cblc-6f-work-checkbox-1::after,
+#cblc-6f-work-price-2:checked ~ table .cblc-6f-work-checkbox-2::after,
+#cblc-6f-work-price-3:checked ~ table .cblc-6f-work-checkbox-3::after,
+#cblc-6f-work-price-4:checked ~ table .cblc-6f-work-checkbox-4::after,
+#cblc-6f-work-price-5:checked ~ table .cblc-6f-work-checkbox-5::after,
+#cblc-6f-work-price-6:checked ~ table .cblc-6f-work-checkbox-6::after,
+#cblc-6f-work-price-7:checked ~ table .cblc-6f-work-checkbox-7::after,
+#cblc-6f-work-price-8:checked ~ table .cblc-6f-work-checkbox-8::after,
+#cblc-6f-work-price-9:checked ~ table .cblc-6f-work-checkbox-9::after,
+#cblc-6f-work-price-10:checked ~ table .cblc-6f-work-checkbox-10::after,
+#cblc-6f-work-price-11:checked ~ table .cblc-6f-work-checkbox-11::after,
+#cblc-6f-work-price-12:checked ~ table .cblc-6f-work-checkbox-12::after,
+#cblc-6f-work-price-13:checked ~ table .cblc-6f-work-checkbox-13::after,
+#cblc-6f-work-price-14:checked ~ table .cblc-6f-work-checkbox-14::after,
+#cblc-6f-work-price-15:checked ~ table .cblc-6f-work-checkbox-15::after {
+	content: "";
+	background-image: url(../img/Vector3.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 1vw;
+	height: 1vw;
+	position: absolute;
+	top: -0.3vw;
+	left: 0.2vw
+}
+
+#cblc-6f-work-price-1:checked ~ table .cblc-6fp-name-1,
+#cblc-6f-work-price-2:checked ~ table .cblc-6fp-name-2,
+#cblc-6f-work-price-3:checked ~ table .cblc-6fp-name-3,
+#cblc-6f-work-price-4:checked ~ table .cblc-6fp-name-4,
+#cblc-6f-work-price-5:checked ~ table .cblc-6fp-name-5,
+#cblc-6f-work-price-6:checked ~ table .cblc-6fp-name-6,
+#cblc-6f-work-price-7:checked ~ table .cblc-6fp-name-7,
+#cblc-6f-work-price-8:checked ~ table .cblc-6fp-name-8,
+#cblc-6f-work-price-9:checked ~ table .cblc-6fp-name-9,
+#cblc-6f-work-price-10:checked ~ table .cblc-6fp-name-10,
+#cblc-6f-work-price-11:checked ~ table .cblc-6fp-name-11,
+#cblc-6f-work-price-12:checked ~ table .cblc-6fp-name-12,
+#cblc-6f-work-price-13:checked ~ table .cblc-6fp-name-13,
+#cblc-6f-work-price-14:checked ~ table .cblc-6fp-name-14,
+#cblc-6f-work-price-15:checked ~ table .cblc-6fp-name-15 {
+	font-weight: 700;
+	background-color: #F0F5F9;
+}
+
+.record {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2.4vw;
+}
+
+.record-left {
+	background-color: rgba(243, 243, 243, 0.8);
+	width: 31.4%;
+	border-radius: 0.2vw;
+	padding: 2.4vw;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	font-size: 1.05vw;
+}
+
+.record-left h2 {
+	margin-bottom: 1.2vw;
+}
+
+.record-left p {
+	margin-bottom: 1.2vw;
+}
+
+.record-left input {
+	margin-bottom: 1.2vw;
+	text-transform: uppercase;
+	padding: 1.2vw;
+	padding-left: 2.4vw;	
+}
+
+.rl-whatsapp {
+	display: flex;
+	align-items: center;
+}
+
+.rl-whatsapp p {
+	cursor: pointer;
+}
+
+.rlw-checkbox {
+	display: none;
+}
+
+.rlw-control {
+	margin-bottom: 1.2vw;
+	width: 1.2vw;
+	height: 1.2vw;
+	border: 0.1vw solid #E5E5E5;
+	margin-right: 1.2vw;
+	cursor: pointer;
+	background: #FFFFFF;
+}
+
+.rlw-control p {
+	min-width: max-content;
+	margin-left: 2vw;
+}
+
+.rlw-checkbox:checked ~ .rlw-control {
+	background-image: url(../img/Vector3.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.record-left input[type="submit"] {
+	margin-bottom: 0;
+	background-color: #AF120A;
+	border: none;
+	border-radius: 0.4vw;
+	color: #fff;
+	cursor: pointer;
+}
+
+.record-right {
+	display: flex;
+    flex-direction: column;
+    font-size: 1.2vw;
+	width: 65vw;
+	justify-content: space-between;
+}
+
+.record-right h2 {
+	margin-top: 2.4vw;
+}
+
+.rr-loading {
+	height: 24vw;
+	background-color: #F0F5F9;
+}
+
+.rrl-frame {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 19.2vw;
+	margin: 2.4vw;
+	box-sizing: border-box;
+	border: 0.4vw solid rgb(68, 76, 87, 0.5);
+	position: relative;
+	color: #444C57;	
+}
+
+.rrl-frame p {
+	line-height: 2.25vw;
+}
+
+.rrlf-line-bottom {
+	position: absolute;
+	height: 80%;
+	width: 0.4vw;
+	width: 94%;
+	height: 0.6vw;
+	background-color: #F0F5F9;
+	bottom: -0.5vw;	
+}
+
+.rrlf-line-top {
+	position: absolute;
+	width: 94%;
+	height: 0.6vw;
+	background-color: #F0F5F9;
+	top: -0.5vw;
+}
+
+.rrlf-line-left {
+	position: absolute;
+	height: 80%;
+	width: 0.6vw;
+	background-color: #F0F5F9;
+	left: -0.5vw;
+}
+
+.rrlf-line-right {
+	position: absolute;
+	height: 80%;
+	width: 0.6vw;
+	background-color: #F0F5F9;
+	right: -0.5vw;
+}
+
+.advantages {
+	background-color: #F3F3F3;
+	text-align: center;
+	margin-bottom: 3.76vw;
+}
+
+.advantages .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+h3 {
+	font-size: 1.5vw;
+}
+
+.advantages h2 {
+	padding-top: 3.6vw;
+}
+
+.advantages h3 {
+	margin-bottom: 1.25vw;
+	text-transform: uppercase
+}
+
+.advantages p {
+	margin-top: 1.25vw;
+	padding-bottom: 5.2vw;
+}
+
+.advantages-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	font-size: 1.05vw;
+	text-align: center;
+	position: relative;	
+	width: 26.47vw;
+}
+
+.ab-img {
+	height: 13.9vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ab-img img {
+	width: 7.5vw;
+}
+
+.ab-line {
+	width: 3.08vw;
+	height: 0.15vw;
+	background-color: #cccccc;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.guarantees {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;	
+	font-size: 1.05vw;
+	margin-bottom: 4.8vw;
+}
+
+.guarantees h2 {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 5.86vw;
+}
+
+.guarantees-block {
+	width: 17.3vw;
+}
+
+.gb-img {
+	width: 6vw;
+	height: 6vw;
+	background-color: #AF120A;
+	border-radius: 6vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1.5vw;
+}
+
+.gbi-price {
+	width: 3.3vw;
+}
+
+.gbi-repairs {
+	width: 2.5vw;
+}
+
+.gbi-employees {
+	width: 3.4vw;
+}
+
+.gbi-guarantees {
+	width: 3.2vw;
+}
+
+.gbi-comfort {
+	margin-bottom: 0.5vw;
+	margin-left: 0.5vw;
+	width: 3.1vw;
+}
+
+.guarantees h3 {
+	text-transform: uppercase;
+	width: 50%;
+	margin-bottom: 1.5vw
+}
+
+.guarantees p:last-child {
+	color: #444C57;	
+}
+
+.guarantees .gb-red {
+	color: #560501;
+	font-style: italic;
+	font-weight: 700;
+	margin-bottom: 1.2vw;
+}
+
+.record-service {
+	display: flex;
+	justify-content: center;
+	color: #ffffff;
+}
+
+.rs-service,
+.rs-record {
+	display: flex;
+	flex-direction: column;	
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 50%;
+	position: relative;
+	z-index: 1;
+	padding-top: 4.8vw;
+	padding-bottom: 4.8vw;
+}
+
+.rs-service {	
+	background-image: url(../img/b53ca0b76407616a92f58e4c616b332d.jpg);
+	text-align: right;
+	padding-right: 7.3vw;
+	align-items: flex-end;
+}
+
+.rs-record {
+	background-image: url(../img/94f500504825dc168e1894dd3bc03030.jpg);		
+	text-align: left;
+	padding-left: 7.3vw;
+	align-items: flex-start;
+}
+
+.rs-service::after,
+.rs-record::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 0, 0, 0.6);
+	z-index: -1;
+}
+
+.rss-1,
+.rss-3 {
+	font-size: 1.8vw;
+	text-transform: uppercase;
+	font-weight: 300;
+	width: 18.5vw;
+	margin-top: 1vw;
+}
+
+.rss-2 {
+	font-size: 6.77vw;
+	font-weight: bold;
+	line-height: 5vw;
+}
+
+.rss-3 span {
+	font-weight: 900;	
+}
+
+.rs-service ul {
+	list-style: none;
+	font-size: 1.2vw;
+}
+
+.rs-service li {
+	height: 2.5vw;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	font-weight: 300;
+}
+
+.rs-record h4 {
+	font-size: 1.95vw;
+	margin-bottom: 2.1vw;
+}
+
+.rsr-form {
+	display: flex;
+	flex-direction: column;
+	width: 27.3vw;
+}
+
+.rsrf-name-phone {
+	background-color: rgba(0, 0, 0, 0.2);
+	border: 0.1vw solid #444C57;
+	padding: 1.2vw;
+	padding-left: 2.3vw;
+	font-size: 1.05vw;
+	box-sizing: border-box;
+	color: #fff;
+	margin-bottom: 1.5vw;
+	text-transform: uppercase;
+}
+
+.rsrf-checkbox {
+	display: none;
+}
+
+.rsrf-label {
+    width: 1.2vw;
+    height: 1.2vw;
+    border: 0.1vw solid #444C57;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.2);
+	font-size: 0.9vw;
+	margin-bottom: 1.9vw;
+}
+
+.rsrf-checkbox:checked ~ .rsrf-label {
+	background-image: url(../img/Vector3.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.rsrf-label p {
+    min-width: 27.3vw;
+    margin-left: 3vw;	
+	cursor: default;
+	color: #E5E5E5;	
+}
+
+.rsrf-label a {
+	color: #E5E5E5;
+	text-decoration: underline;
+}
+
+.rsrf-label a:hover {
+	text-decoration: none;
+}
+
+.rsrf-btn {
+	padding: 1.2vw;
+	text-transform: uppercase;
+	font-size: 1.2vw;
+	border: none;
+	background-color: #DA251C;
+	color: #fff;
+	border-radius: 0.4vw;
+	cursor: pointer;
+}
+
+.map {
+	display: flex;
+	justify-content: center;	
+}
+
+.map iframe {	
+	height: 43.3vw;
+	width: 100%;
+	border: none;
+}
+
+.in-instagram {
+	margin-top: 4.8vw;
+	padding-bottom: 4.8vw;
+	border-bottom: 0.1vw solid #444C57;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.in-instagram p {
+	margin-top: 1.2vw;
+	margin-bottom: 3.6vw;
+	color: #444C57;
+	font-size: 1.2vw;
+}
+
+.ii-foto {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 20.25vw;
+	position: relative
+}
+
+.ii-foto div {
+	width: 19.25vw;
+	height: 19.25vw;	
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.iif-img-1 {
+	background-image: url(../img/orig.jpg);
+}
+
+.iif-img-2 {
+	background-image: url(../img/orig.jpg);
+}
+
+.iif-img-3 {
+	background-image: url(../img/inx960x640.jpg);
+}
+
+.iif-img-4 {
+	background-image: url(../img/b53ca0b76407616a92f58e4c616b332d.jpg);
+}
+
+.iif-img-5 {
+	background-image: url(../img/94f500504825dc168e1894dd3bc03030.jpg);
+}
+
+.footer-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.13vw;
+}
+
+.ft-block {
+	padding-top: 6.7vw;
+	margin-bottom: 2.6vw;
+	display: flex;
+	width: 64.2vw;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	margin-right: 3.6vw;	
+}
+
+.ft-block div {
+	position: relative;	
+}
+
+.ft-block svg {
+	position: absolute;
+	background-size: cover;
+	background-position: center;
+	top: -2.9vw;
+}
+
+.ft-phone {
+	display: flex;
+	flex-direction: column;
+}
+
+.ft-phone svg,
+.ft-mail svg {
+	width: 2.1vw;
+    height: 2.1vw;
+	left: 50%;
+	margin-left: -1.05vw;
+}
+
+.ft-adress svg,
+.ft-work svg {
+	width: 2.4vw;
+    height: 2.4vw;
+	left: 50%;
+	margin-left: -1.2vw;
+}
+
+.ft-block .ft-mail svg {
+	top: -3.4vw;
+}
+
+.footer-center {
+	background-color: #F2F2F2;	
+	padding-top: 3vw;
+	padding-bottom: 1.5vw;
+}
+
+.footer-center .container {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.05vw;
+	color: #444C57;
+}
+
+.fc-left {
+	display: flex;
+	justify-content: space-between;
+}
+
+.fcl-item {
+	margin-right: 13.46vw;
+	padding-left: 2vw;
+}
+
+.fcl-item .fcl-list-text {
+	text-transform: uppercase;
+	font-weight: bold;
+	list-style: none;
+	margin-bottom: 2.4vw;
+	margin-left: -2vw;
+	height: auto;
+}
+
+.fcl-item .fcl-list-text:hover {
+	list-style: none;
+	color: #444C57;
+}
+
+.fcl-item li {
+	list-style: url(../img/Vector5.svg);
+	height: 2.4vw;
+}
+
+.fcl-item li:hover {
+	list-style: url(../img/Vector4.svg);
+	color: #000;
+}
+
+.fcl-list-link a {
+	color: #0273B2;
+	text-decoration: underline;
+}
+
+.fcl-list-link a:hover {
+	text-decoration: none;
+}
+
+.fcl-item .fcl-list-link {
+	list-style: none;	
+}
+
+.fcl-item .fcl-list-link:hover {
+	list-style: none;
+}
+
+.fc-right {
+	width: 25.19vw;
+}
+
+.fcr-link {
+	text-transform: uppercase;
+	font-weight: bold;	
+	margin-bottom: 2.3vw
+}
+
+.fcrl-list {
+	list-style: none;
+	height: 2.7vw;
+}
+
+.fcr-contacts {
+	padding-left: 3vw;
+}
+
+.fcr-contacts .fcrc-list-header {
+	text-transform: uppercase;
+	font-size: 1.05vw;
+	margin-left: -3vw;
+}
+
+.fcrc-list {
+	height: 2.7vw;
+	font-size: 0.98vw;
+	list-style: none;
+	position: relative;
+}
+
+.fcrc-list-mail a,
+.fcrc-list-phone a {
+	color: #444C57;
+}
+
+.fcrc-list-phone a:last-child {
+	margin-left: 1.1vw;
+	position: relative;
+}
+
+.fcrc-list-phone a:last-child::after {
+	content: "";
+	width: 0.1vw;
+	height: 100%;
+	position: absolute;
+	background-color: #444C57;
+	left: -0.65vw;
+	top: -0.1vw;
+	cursor: default;
+}
+
+.fcrc-list svg {
+	position: absolute;
+	left: -3vw;
+	top: -0.2vw;
+	width: 1.5vw;
+	height: 1.5vw
+}
+
+.footer-bottom {
+	background-color: #444C57
+}
+
+.footer-bottom .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-bottom p {
+	line-height: 3.6vw;
+	color: #fff;
+	font-size: 0.9vw;
+}
+
+.fb-social {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 9.4vw;
+}
+
+.fb-social svg {
+	width: 2.4vw;
+	border-radius: 2.4vw;
+}
+
+.breadcrumbs {
+	margin-bottom: 2.4vw
+}
+
+.breadcrumbs h2 {
+	font-size: 2.7vw;
+}
+
+.breadcrumbs-list {
+	list-style: none;
+	display: flex;
+	font-size: 1.05vw;
+	text-transform: uppercase;
+	margin-bottom: 2.4vw;
+}
+
+.breadcrumbs-item {
+	padding-right: 3.76vw;
+	position: relative;
+}
+
+.breadcrumbs-item::after {
+	content: "";
+	position: absolute;
+	background-image: url(../img/Vector6.svg);
+	background-size: cover;
+	background-position: center;
+	width: 1.54vw;
+	height: 0.67vw;
+	top: 0.3vw;
+	right: 1vw;
+}
+
+.breadcrumbs-item:last-child {
+	padding-right: 0;	
+}
+
+.breadcrumbs-item:last-child::after {
+	content: none;
+}
+
+.breadcrumbs-item:last-child a {
+	color: #212324;
+}
+
+.breadcrumbs-item a {
+	color: #AF120A;
+}
+
+.car-brands .record-right {
+	line-height: 2.48vw;
+}
+
+.record-left-stock {
+	width: 48.2vw;
+	justify-content: flex-start;
+}
+
+.record-left-stock h2 {
+	margin-bottom: 1.2vw;
+}
+
+.record-left-stock>p {
+	margin-bottom: 1.2vw;
+}
+
+.record-left-stock .rr-loading {
+	height: 37.6vw;
+}
+
+.record-left-stock .rrl-frame {
+	height: 32.56vw;
+}
+
+.record-left-stock .rrlf-line-top,
+.record-left-stock .rrlf-line-bottom {
+	width: 90%;
+}
+
+.record-left-stock .rrlf-line-left,
+.record-left-stock .rrlf-line-right {
+	height: 87%;
+}
+
+.record-right-stock {
+	width: 45.86vw;	
+	justify-content: flex-start;
+}
+
+.record-right-stock h2 {
+	margin-bottom: 3.6vw;
+}
+
+.record-right-stock p {
+	line-height: 2.48vw;
+	font-size: 1.05vw;
+}
+
+.fcrll-networks {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;	
+	width: 15vw;
+}
+
+.fcrllnl-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1.8vw;
+	height: 1.8vw;
+}
+
+.fcrllnl-block img {
+	width: 1.4vw;
+	height: 1.4vw;
+}
+
+.fcrllnl-block-vk {
+	background-color: #48729E;
+}
+
+.fcrllnl-block-fb {
+	background-color: #3B5998;
+}
+
+.fcrllnl-block-tw {
+	background-color: #00ACED;
+}
+
+.fcrllnl-block-vb {
+	background-color: #7B519D;
+}
+
+.fcrllnl-block-wa {
+	background-color: #65BC54;
+}
+
+.fcrllnl-block-ok {
+	background-color: #EB722E;
+}
+
+.fcrllnl-block-mw {
+	background-color: #168DE2;
+}
+
+@media (min-width: 1330px) {
+	.container {
+		padding-left: 1.3rem;
+		padding-right: 1.3rem;
+	}
+
+	.header-top .container {
+		font-size: 1.2rem;
+		height: 3.2rem;
+	}
+
+	.header-top .top-left {
+		width: 75.6rem;
+	}
+
+	.header-top .top-text-1 {
+		padding-left: 2.4rem;
+	}
+
+	.header-top .top-text-2 {
+		padding-left: 2.2rem;
+	}
+
+	.header-top .top-text-3 {
+		padding-left: 2.2rem;
+	}
+
+	.header-top .top-right {
+		padding-left: 2.2rem;
+	}
+
+
+	.header-top .top-text-1::after,
+	.header-top .top-text-2::after,
+	.header-top .top-text-3 a::after,
+	.header-top .top-right a::after {
+		width: 2rem;
+		height: 2rem;
+		top: -0.4rem;
+	}
+
+	.header-bottom {
+		font-size: 1.2rem;
+		height: 12.8rem;
+	}
+
+	.header-bottom .bottom-left {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 51.2rem;
+	}
+
+	.logo img {
+		width: 28.2rem;
+	}
+
+	.header-bottom .bottom-left p {
+		font-size: 1.4rem;
+	}
+
+	.header-bottom .bottom-right {
+		width: 59.3rem;
+		padding-left: 3.5rem;
+	}
+
+	.header-bottom .bottom-right::after {
+		width: 2.4rem;
+		height: 2.4rem;
+		bottom: 0.1rem;
+	}
+
+	.header-bottom .right-phone p {
+		margin-bottom: 1rem;
+	}
+
+	.header-bottom .right-phone a {
+		font-size: 2.4rem;
+	}
+
+	.header-bottom .btn {
+		border: 0.1rem solid #DA251C;
+		height: 4rem;
+		width: 14.4rem;
+		border-radius: 0.4rem;
+	}
+
+	.nav-list {
+		height: 6.4rem;
+		border-top: 0.2rem solid #E5E5E5;
+		border-bottom: 0.2rem solid #E5E5E5;
+		font-size: 1.4rem;
+	}
+
+	.nav-item-active {
+		padding-right: 2.6rem;
+	}
+
+	.nav-item-active>a::after {
+		top: 0.4rem;
+		width: 1rem;
+		height: 0.5rem;
+	}
+
+	.sub-list {
+		top: 1.4rem;
+	}
+
+	.sub-item {	
+		height: 2.6rem;
+		padding: 0.8rem;
+		border-bottom: 0.15rem solid #fff;
+	}
+
+	.nav-item img {
+		width: 2.6rem;
+	}
+
+	.nav-bottom .nav-list {
+		margin-top: 3.1rem;
+	}
+
+	.nav-bottom .nav-item a {
+		height: 14.4rem;
+		border-bottom: 0.4rem solid #F2F2F2;
+	}
+
+	.nav-bottom .nav-item svg {
+		margin-right: 2.4rem;
+	}
+
+	.ni-dws svg {
+		width: 5.6rem;
+	}
+
+	.ni-to svg {
+		width: 6rem;
+	}
+
+	.ni-repairs svg,
+	.ni-diagnostics svg {
+		width: 4.8rem;
+	}
+	
+	.nav-bottom .nav-item a:hover {
+		border-bottom: 0.4rem solid #DA251C;
+	}
+
+	h2 {
+		font-size: 3.2rem;
+	}
+
+	.car-brands {
+		margin-bottom: 3.2rem;
+	}
+	
+	.cb-slide-controls {
+		margin-top: 3.2rem;
+		border-bottom: 0.1rem solid #E5E5E5;
+	}
+	
+	.sc-controls-radio {
+		width: 25.6rem;
+		height: 7.3rem;
+		font-size: 1.8rem;
+		border: 0.1rem solid #E5E5E5;
+		border-radius: 0.4rem 0.4rem 0 0;
+	}
+
+	.sc-controls-radio svg {
+		margin-right: 1rem;
+		width: 4rem;
+		height: 4rem;
+	}
+
+	.cb-link-radio-toyota:checked ~ .cb-slide-controls .sc-controls-radio-toyota,
+	.cb-link-radio-lexus:checked ~ .cb-slide-controls .sc-controls-radio-lexus {
+		height: 8.1rem;
+	}
+
+	.cb-slide-controls input {
+		width: 33.5rem;
+		height: 4.9rem;
+		font-size: 1.4rem;
+		padding-left: 5.9rem;
+		border: 0.1rem solid #E5E5E5;
+		border-radius: 0.4rem;
+	}
+	
+	.sc-search svg {
+		top: 1.3rem;
+		left: 1.8rem;
+		width: 2.4rem;
+		height: 2.4rem;
+	}
+
+	.cb-toyota .cbt-container,
+	.cb-lexus .cbl-container {
+		height: 24rem;
+		margin-bottom: 2.6rem;
+		margin-top: 1.3rem;
+	}
+
+	.cb-card {
+		width: 19.2rem;
+		font-size: 1.4rem;
+	}
+
+	.cb-card:hover {
+		box-shadow: 0px 0.4rem 0.8rem rgba(0, 0, 0, 0.15);
+		border-radius: 0.4rem;
+	}
+
+	.cb-card-img {
+		height: 16rem;
+	}
+	
+	.cb-card:hover p {
+		top: -0.5rem;
+	}
+
+	.cb-card label {
+		border-radius: 0.4rem;
+		height: 4rem;
+		width: 13.6rem;
+		margin-bottom: 1.8rem;
+	}
+	
+	.cbtc-container,
+	.cblc-container {
+		font-size: 1.6rem;
+	}
+
+	.cbtc-container p,
+	.cblc-container p {
+		height: 6.4rem;
+		padding-left: 3.8rem;
+	}
+
+	.cbtc-container label,
+	.cblc-container label {
+		height: 6.4rem;
+		padding-left: 3.4rem;
+		border-left: 0.4rem solid #F2F2F2;
+		border-bottom: 0.1rem solid #fff;
+	}
+
+	.cbt-cost form,
+	.cbl-cost form {
+		font-size: 1.6rem;
+	}
+
+	.cbtcf-price tr,
+	.cblcf-price tr {
+		height: 4.8rem;
+		width: 86.5rem;	
+	}
+
+	.cbtcf-price td p,
+	.cblcf-price td p {
+		width: 11.2rem;
+	}
+
+	.cbtcf-price tr:first-child,
+	.cblcf-price tr:first-child {
+		padding-bottom: 1.6rem;
+	}
+
+	/*
+	TOYOTA LAND CRUISER
+	*/
+
+	.cbtc-1-radio-front:checked ~ .cbtc-container .cbtc-1c-radio-front,
+	.cbtc-1-radio-back:checked ~ .cbtc-container .cbtc-1c-radio-back,
+	.cbtc-1-radio-steering:checked ~ .cbtc-container .cbtc-1c-radio-steering,
+	.cbtc-1-radio-brake:checked ~ .cbtc-container .cbtc-1c-radio-brake,
+	.cbtc-1-radio-transmission:checked ~ .cbtc-container .cbtc-1c-radio-transmission,
+	.cbtc-1-radio-cooling:checked ~ .cbtc-container .cbtc-1c-radio-cooling,
+	.cbtc-1-radio-engine:checked ~ .cbtc-container .cbtc-1c-radio-engine,
+	.cbtc-1-radio-electrician:checked ~ .cbtc-container .cbtc-1c-radio-electrician,
+	.cbtc-1-radio-fuel:checked ~ .cbtc-container .cbtc-1c-radio-fuel {
+		border-left: 0.4rem solid #DA251C;
+	}
+
+	.cbtc-1f-btn {
+		width: 25.7rem;
+		height: 6.4rem;
+	}
+
+	.cbtc-1f-work-checkbox {
+		width: 1.6rem;
+		height: 1.6rem;
+		border: 0.1rem solid #cccccc;
+		border-radius: 0.2rem;
+	}
+
+	#cbtc-1f-work-price-1:checked ~ table .cbtc-1f-work-checkbox-1::after,
+	#cbtc-1f-work-price-2:checked ~ table .cbtc-1f-work-checkbox-2::after,
+	#cbtc-1f-work-price-3:checked ~ table .cbtc-1f-work-checkbox-3::after,
+	#cbtc-1f-work-price-4:checked ~ table .cbtc-1f-work-checkbox-4::after,
+	#cbtc-1f-work-price-5:checked ~ table .cbtc-1f-work-checkbox-5::after,
+	#cbtc-1f-work-price-6:checked ~ table .cbtc-1f-work-checkbox-6::after,
+	#cbtc-1f-work-price-7:checked ~ table .cbtc-1f-work-checkbox-7::after,
+	#cbtc-1f-work-price-8:checked ~ table .cbtc-1f-work-checkbox-8::after,
+	#cbtc-1f-work-price-9:checked ~ table .cbtc-1f-work-checkbox-9::after,
+	#cbtc-1f-work-price-10:checked ~ table .cbtc-1f-work-checkbox-10::after,
+	#cbtc-1f-work-price-11:checked ~ table .cbtc-1f-work-checkbox-11::after,
+	#cbtc-1f-work-price-12:checked ~ table .cbtc-1f-work-checkbox-12::after,
+	#cbtc-1f-work-price-13:checked ~ table .cbtc-1f-work-checkbox-13::after,
+	#cbtc-1f-work-price-14:checked ~ table .cbtc-1f-work-checkbox-14::after,
+	#cbtc-1f-work-price-15:checked ~ table .cbtc-1f-work-checkbox-15::after {
+		width: 1.4rem;
+		height: 1.4rem;
+		top: -0.3rem;
+		left: 0.2rem;
+	}
+
+	/*
+	TOYOTA SEQUOIA
+	*/
+
+	.cbtc-2-radio-front:checked ~ .cbtc-container .cbtc-2c-radio-front,
+	.cbtc-2-radio-back:checked ~ .cbtc-container .cbtc-2c-radio-back,
+	.cbtc-2-radio-steering:checked ~ .cbtc-container .cbtc-2c-radio-steering,
+	.cbtc-2-radio-brake:checked ~ .cbtc-container .cbtc-2c-radio-brake,
+	.cbtc-2-radio-transmission:checked ~ .cbtc-container .cbtc-2c-radio-transmission,
+	.cbtc-2-radio-cooling:checked ~ .cbtc-container .cbtc-2c-radio-cooling,
+	.cbtc-2-radio-engine:checked ~ .cbtc-container .cbtc-2c-radio-engine,
+	.cbtc-2-radio-electrician:checked ~ .cbtc-container .cbtc-2c-radio-electrician,
+	.cbtc-2-radio-fuel:checked ~ .cbtc-container .cbtc-2c-radio-fuel {
+		border-left: 0.4rem solid #DA251C;
+	}
+
+	.cbtc-2f-btn {
+		width: 25.7rem;
+		height: 6.4rem;
+	}
+
+	.cbtc-2f-work-checkbox {
+		width: 1.6rem;
+		height: 1.6rem;
+		border: 0.1rem solid #cccccc;
+		border-radius: 0.2rem;
+	}
+
+	#cbtc-2f-work-price-1:checked ~ table .cbtc-2f-work-checkbox-1::after,
+	#cbtc-2f-work-price-2:checked ~ table .cbtc-2f-work-checkbox-2::after,
+	#cbtc-2f-work-price-3:checked ~ table .cbtc-2f-work-checkbox-3::after,
+	#cbtc-2f-work-price-4:checked ~ table .cbtc-2f-work-checkbox-4::after,
+	#cbtc-2f-work-price-5:checked ~ table .cbtc-2f-work-checkbox-5::after,
+	#cbtc-2f-work-price-6:checked ~ table .cbtc-2f-work-checkbox-6::after,
+	#cbtc-2f-work-price-7:checked ~ table .cbtc-2f-work-checkbox-7::after,
+	#cbtc-2f-work-price-8:checked ~ table .cbtc-2f-work-checkbox-8::after,
+	#cbtc-2f-work-price-9:checked ~ table .cbtc-2f-work-checkbox-9::after,
+	#cbtc-2f-work-price-10:checked ~ table .cbtc-2f-work-checkbox-10::after,
+	#cbtc-2f-work-price-11:checked ~ table .cbtc-2f-work-checkbox-11::after,
+	#cbtc-2f-work-price-12:checked ~ table .cbtc-2f-work-checkbox-12::after,
+	#cbtc-2f-work-price-13:checked ~ table .cbtc-2f-work-checkbox-13::after,
+	#cbtc-2f-work-price-14:checked ~ table .cbtc-2f-work-checkbox-14::after,
+	#cbtc-2f-work-price-15:checked ~ table .cbtc-2f-work-checkbox-15::after {
+		width: 1.4rem;
+		height: 1.4rem;
+		top: -0.3rem;
+		left: 0.2rem;
+	}
+
+	/*
+	TOYOTA TUNDRA
+	*/
+
+	.cbtc-3-radio-front:checked ~ .cbtc-container .cbtc-3c-radio-front,
+	.cbtc-3-radio-back:checked ~ .cbtc-container .cbtc-3c-radio-back,
+	.cbtc-3-radio-steering:checked ~ .cbtc-container .cbtc-3c-radio-steering,
+	.cbtc-3-radio-brake:checked ~ .cbtc-container .cbtc-3c-radio-brake,
+	.cbtc-3-radio-transmission:checked ~ .cbtc-container .cbtc-3c-radio-transmission,
+	.cbtc-3-radio-cooling:checked ~ .cbtc-container .cbtc-3c-radio-cooling,
+	.cbtc-3-radio-engine:checked ~ .cbtc-container .cbtc-3c-radio-engine,
+	.cbtc-3-radio-electrician:checked ~ .cbtc-container .cbtc-3c-radio-electrician,
+	.cbtc-3-radio-fuel:checked ~ .cbtc-container .cbtc-3c-radio-fuel {
+		border-left: 0.4rem solid #DA251C;
+	}
+
+	.cbtc-3f-btn {
+		width: 25.7rem;
+		height: 6.4rem;
+	}
+
+	.cbtc-3f-work-checkbox {
+		width: 1.6rem;
+		height: 1.6rem;
+		border: 0.1rem solid #cccccc;
+		border-radius: 0.2rem;
+	}
+
+	#cbtc-3f-work-price-1:checked ~ table .cbtc-3f-work-checkbox-1::after,
+	#cbtc-3f-work-price-2:checked ~ table .cbtc-3f-work-checkbox-2::after,
+	#cbtc-3f-work-price-3:checked ~ table .cbtc-3f-work-checkbox-3::after,
+	#cbtc-3f-work-price-4:checked ~ table .cbtc-3f-work-checkbox-4::after,
+	#cbtc-3f-work-price-5:checked ~ table .cbtc-3f-work-checkbox-5::after,
+	#cbtc-3f-work-price-6:checked ~ table .cbtc-3f-work-checkbox-6::after,
+	#cbtc-3f-work-price-7:checked ~ table .cbtc-3f-work-checkbox-7::after,
+	#cbtc-3f-work-price-8:checked ~ table .cbtc-3f-work-checkbox-8::after,
+	#cbtc-3f-work-price-9:checked ~ table .cbtc-3f-work-checkbox-9::after,
+	#cbtc-3f-work-price-10:checked ~ table .cbtc-3f-work-checkbox-10::after,
+	#cbtc-3f-work-price-11:checked ~ table .cbtc-3f-work-checkbox-11::after,
+	#cbtc-3f-work-price-12:checked ~ table .cbtc-3f-work-checkbox-12::after,
+	#cbtc-3f-work-price-13:checked ~ table .cbtc-3f-work-checkbox-13::after,
+	#cbtc-3f-work-price-14:checked ~ table .cbtc-3f-work-checkbox-14::after,
+	#cbtc-3f-work-price-15:checked ~ table .cbtc-3f-work-checkbox-15::after {
+		width: 1.4rem;
+		height: 1.4rem;
+		top: -0.3rem;
+		left: 0.2rem;
+	}
+
+	/*
+	TOYOTA LAND CRUISER PRADO
+	*/
+
+	.cbtc-4-radio-front:checked ~ .cbtc-container .cbtc-4c-radio-front,
+	.cbtc-4-radio-back:checked ~ .cbtc-container .cbtc-4c-radio-back,
+	.cbtc-4-radio-steering:checked ~ .cbtc-container .cbtc-4c-radio-steering,
+	.cbtc-4-radio-brake:checked ~ .cbtc-container .cbtc-4c-radio-brake,
+	.cbtc-4-radio-transmission:checked ~ .cbtc-container .cbtc-4c-radio-transmission,
+	.cbtc-4-radio-cooling:checked ~ .cbtc-container .cbtc-4c-radio-cooling,
+	.cbtc-4-radio-engine:checked ~ .cbtc-container .cbtc-4c-radio-engine,
+	.cbtc-4-radio-electrician:checked ~ .cbtc-container .cbtc-4c-radio-electrician,
+	.cbtc-4-radio-fuel:checked ~ .cbtc-container .cbtc-4c-radio-fuel {
+		border-left: 0.4rem solid #DA251C;
+	}
+
+	.cbtc-4f-btn {
+		width: 25.7rem;
+		height: 6.4rem;
+	}
+
+	.cbtc-4f-work-checkbox {
+		width: 1.6rem;
+		height: 1.6rem;
+		border: 0.1rem solid #cccccc;
+		border-radius: 0.2rem;
+	}
+
+	#cbtc-4f-work-price-1:checked ~ table .cbtc-4f-work-checkbox-1::after,
+	#cbtc-4f-work-price-2:checked ~ table .cbtc-4f-work-checkbox-2::after,
+	#cbtc-4f-work-price-3:checked ~ table .cbtc-4f-work-checkbox-3::after,
+	#cbtc-4f-work-price-4:checked ~ table .cbtc-4f-work-checkbox-4::after,
+	#cbtc-4f-work-price-5:checked ~ table .cbtc-4f-work-checkbox-5::after,
+	#cbtc-4f-work-price-6:checked ~ table .cbtc-4f-work-checkbox-6::after,
+	#cbtc-4f-work-price-7:checked ~ table .cbtc-4f-work-checkbox-7::after,
+	#cbtc-4f-work-price-8:checked ~ table .cbtc-4f-work-checkbox-8::after,
+	#cbtc-4f-work-price-9:checked ~ table .cbtc-4f-work-checkbox-9::after,
+	#cbtc-4f-work-price-10:checked ~ table .cbtc-4f-work-checkbox-10::after,
+	#cbtc-4f-work-price-11:checked ~ table .cbtc-4f-work-checkbox-11::after,
+	#cbtc-4f-work-price-12:checked ~ table .cbtc-4f-work-checkbox-12::after,
+	#cbtc-4f-work-price-13:checked ~ table .cbtc-4f-work-checkbox-13::after,
+	#cbtc-4f-work-price-14:checked ~ table .cbtc-4f-work-checkbox-14::after,
+	#cbtc-4f-work-price-15:checked ~ table .cbtc-4f-work-checkbox-15::after {
+		width: 1.4rem;
+		height: 1.4rem;
+		top: -0.3rem;
+		left: 0.2rem;
+	}
+
+	/*
+	TOYOTA HIGHLANDER
+	*/
+
+	.cbtc-5-radio-front:checked ~ .cbtc-container .cbtc-5c-radio-front,
+	.cbtc-5-radio-back:checked ~ .cbtc-container .cbtc-5c-radio-back,
+	.cbtc-5-radio-steering:checked ~ .cbtc-container .cbtc-5c-radio-steering,
+	.cbtc-5-radio-brake:checked ~ .cbtc-container .cbtc-5c-radio-brake,
+	.cbtc-5-radio-transmission:checked ~ .cbtc-container .cbtc-5c-radio-transmission,
+	.cbtc-5-radio-cooling:checked ~ .cbtc-container .cbtc-5c-radio-cooling,
+	.cbtc-5-radio-engine:checked ~ .cbtc-container .cbtc-5c-radio-engine,
+	.cbtc-5-radio-electrician:checked ~ .cbtc-container .cbtc-5c-radio-electrician,
+	.cbtc-5-radio-fuel:checked ~ .cbtc-container .cbtc-5c-radio-fuel {
+		border-left: 0.4rem solid #DA251C;
+	}
+
+	.cbtc-5f-btn {
+		width: 25.7rem;
+		height: 6.4rem;
+	}
+
+	.cbtc-5f-work-checkbox {
+		width: 1.6rem;
+		height: 1.6rem;
+		border: 0.1rem solid #cccccc;
+		border-radius: 0.2rem;
+	}
+
+	#cbtc-5f-work-price-1:checked ~ table .cbtc-5f-work-checkbox-1::after,
+	#cbtc-5f-work-price-2:checked ~ table .cbtc-5f-work-checkbox-2::after,
+	#cbtc-5f-work-price-3:checked ~ table .cbtc-5f-work-checkbox-3::after,
+	#cbtc-5f-work-price-4:checked ~ table .cbtc-5f-work-checkbox-4::after,
+	#cbtc-5f-work-price-5:checked ~ table .cbtc-5f-work-checkbox-5::after,
+	#cbtc-5f-work-price-6:checked ~ table .cbtc-5f-work-checkbox-6::after,
+	#cbtc-5f-work-price-7:checked ~ table .cbtc-5f-work-checkbox-7::after,
+	#cbtc-5f-work-price-8:checked ~ table .cbtc-5f-work-checkbox-8::after,
+	#cbtc-5f-work-price-9:checked ~ table .cbtc-5f-work-checkbox-9::after,
+	#cbtc-5f-work-price-10:checked ~ table .cbtc-5f-work-checkbox-10::after,
+	#cbtc-5f-work-price-11:checked ~ table .cbtc-5f-work-checkbox-11::after,
+	#cbtc-5f-work-price-12:checked ~ table .cbtc-5f-work-checkbox-12::after,
+	#cbtc-5f-work-price-13:checked ~ table .cbtc-5f-work-checkbox-13::after,
+	#cbtc-5f-work-price-14:checked ~ table .cbtc-5f-work-checkbox-14::after,
+	#cbtc-5f-work-price-15:checked ~ table .cbtc-5f-work-checkbox-15::after {
+		width: 1.4rem;
+		height: 1.4rem;
+		top: -0.3rem;
+		left: 0.2rem;
+	}
+
+	/*
+	TOYOTA CAMRY
+	*/
+
+	.cbtc-6-radio-front:checked ~ .cbtc-container .cbtc-6c-radio-front,
+	.cbtc-6-radio-back:checked ~ .cbtc-container .cbtc-6c-radio-back,
+	.cbtc-6-radio-steering:checked ~ .cbtc-container .cbtc-6c-radio-steering,
+	.cbtc-6-radio-brake:checked ~ .cbtc-container .cbtc-6c-radio-brake,
+	.cbtc-6-radio-transmission:checked ~ .cbtc-container .cbtc-6c-radio-transmission,
+	.cbtc-6-radio-cooling:checked ~ .cbtc-container .cbtc-6c-radio-cooling,
+	.cbtc-6-radio-engine:checked ~ .cbtc-container .cbtc-6c-radio-engine,
+	.cbtc-6-radio-electrician:checked ~ .cbtc-container .cbtc-6c-radio-electrician,
+	.cbtc-6-radio-fuel:checked ~ .cbtc-container .cbtc-6c-radio-fuel {
+		border-left: 0.4rem solid #DA251C;
+	}
+
+	.cbtc-6f-btn {
+		width: 25.7rem;
+		height: 6.4rem;
+	}
+
+	.cbtc-6f-work-checkbox {
+		width: 1.6rem;
+		height: 1.6rem;
+		border: 0.1rem solid #cccccc;
+		border-radius: 0.2rem;
+	}
+
+	#cbtc-6f-work-price-1:checked ~ table .cbtc-6f-work-checkbox-1::after,
+	#cbtc-6f-work-price-2:checked ~ table .cbtc-6f-work-checkbox-2::after,
+	#cbtc-6f-work-price-3:checked ~ table .cbtc-6f-work-checkbox-3::after,
+	#cbtc-6f-work-price-4:checked ~ table .cbtc-6f-work-checkbox-4::after,
+	#cbtc-6f-work-price-5:checked ~ table .cbtc-6f-work-checkbox-5::after,
+	#cbtc-6f-work-price-6:checked ~ table .cbtc-6f-work-checkbox-6::after,
+	#cbtc-6f-work-price-7:checked ~ table .cbtc-6f-work-checkbox-7::after,
+	#cbtc-6f-work-price-8:checked ~ table .cbtc-6f-work-checkbox-8::after,
+	#cbtc-6f-work-price-9:checked ~ table .cbtc-6f-work-checkbox-9::after,
+	#cbtc-6f-work-price-10:checked ~ table .cbtc-6f-work-checkbox-10::after,
+	#cbtc-6f-work-price-11:checked ~ table .cbtc-6f-work-checkbox-11::after,
+	#cbtc-6f-work-price-12:checked ~ table .cbtc-6f-work-checkbox-12::after,
+	#cbtc-6f-work-price-13:checked ~ table .cbtc-6f-work-checkbox-13::after,
+	#cbtc-6f-work-price-14:checked ~ table .cbtc-6f-work-checkbox-14::after,
+	#cbtc-6f-work-price-15:checked ~ table .cbtc-6f-work-checkbox-15::after {
+		width: 1.4rem;
+		height: 1.4rem;
+		top: -0.3rem;
+		left: 0.2rem;
+	}
+
+	/*
+	lexus LAND CRUISER
+	*/
+
+	.cblc-1-radio-front:checked ~ .cblc-container .cblc-1c-radio-front,
+	.cblc-1-radio-back:checked ~ .cblc-container .cblc-1c-radio-back,
+	.cblc-1-radio-steering:checked ~ .cblc-container .cblc-1c-radio-steering,
+	.cblc-1-radio-brake:checked ~ .cblc-container .cblc-1c-radio-brake,
+	.cblc-1-radio-transmission:checked ~ .cblc-container .cblc-1c-radio-transmission,
+	.cblc-1-radio-cooling:checked ~ .cblc-container .cblc-1c-radio-cooling,
+	.cblc-1-radio-engine:checked ~ .cblc-container .cblc-1c-radio-engine,
+	.cblc-1-radio-electrician:checked ~ .cblc-container .cblc-1c-radio-electrician,
+	.cblc-1-radio-fuel:checked ~ .cblc-container .cblc-1c-radio-fuel {
+		border-left: 0.4rem solid #DA251C;
+	}
+
+	.cblc-1f-btn {
+		width: 25.7rem;
+		height: 6.4rem;
+	}
+
+	.cblc-1f-work-checkbox {
+		width: 1.6rem;
+		height: 1.6rem;
+		border: 0.1rem solid #cccccc;
+		border-radius: 0.2rem;
+	}
+
+	#cblc-1f-work-price-1:checked ~ table .cblc-1f-work-checkbox-1::after,
+	#cblc-1f-work-price-2:checked ~ table .cblc-1f-work-checkbox-2::after,
+	#cblc-1f-work-price-3:checked ~ table .cblc-1f-work-checkbox-3::after,
+	#cblc-1f-work-price-4:checked ~ table .cblc-1f-work-checkbox-4::after,
+	#cblc-1f-work-price-5:checked ~ table .cblc-1f-work-checkbox-5::after,
+	#cblc-1f-work-price-6:checked ~ table .cblc-1f-work-checkbox-6::after,
+	#cblc-1f-work-price-7:checked ~ table .cblc-1f-work-checkbox-7::after,
+	#cblc-1f-work-price-8:checked ~ table .cblc-1f-work-checkbox-8::after,
+	#cblc-1f-work-price-9:checked ~ table .cblc-1f-work-checkbox-9::after,
+	#cblc-1f-work-price-10:checked ~ table .cblc-1f-work-checkbox-10::after,
+	#cblc-1f-work-price-11:checked ~ table .cblc-1f-work-checkbox-11::after,
+	#cblc-1f-work-price-12:checked ~ table .cblc-1f-work-checkbox-12::after,
+	#cblc-1f-work-price-13:checked ~ table .cblc-1f-work-checkbox-13::after,
+	#cblc-1f-work-price-14:checked ~ table .cblc-1f-work-checkbox-14::after,
+	#cblc-1f-work-price-15:checked ~ table .cblc-1f-work-checkbox-15::after {
+		width: 1.4rem;
+		height: 1.4rem;
+		top: -0.3rem;
+		left: 0.2rem;
+	}
+	/*
+	lexus SEQUOIA
+	*/
+
+	.cblc-2-radio-front:checked ~ .cblc-container .cblc-2c-radio-front,
+	.cblc-2-radio-back:checked ~ .cblc-container .cblc-2c-radio-back,
+	.cblc-2-radio-steering:checked ~ .cblc-container .cblc-2c-radio-steering,
+	.cblc-2-radio-brake:checked ~ .cblc-container .cblc-2c-radio-brake,
+	.cblc-2-radio-transmission:checked ~ .cblc-container .cblc-2c-radio-transmission,
+	.cblc-2-radio-cooling:checked ~ .cblc-container .cblc-2c-radio-cooling,
+	.cblc-2-radio-engine:checked ~ .cblc-container .cblc-2c-radio-engine,
+	.cblc-2-radio-electrician:checked ~ .cblc-container .cblc-2c-radio-electrician,
+	.cblc-2-radio-fuel:checked ~ .cblc-container .cblc-2c-radio-fuel {
+		border-left: 0.4rem solid #DA251C;
+	}
+
+	.cblc-2f-btn {
+		width: 25.7rem;
+		height: 6.4rem;
+	}
+
+	.cblc-2f-work-checkbox {
+		width: 1.6rem;
+		height: 1.6rem;
+		border: 0.1rem solid #cccccc;
+		border-radius: 0.2rem;
+	}
+
+	#cblc-2f-work-price-1:checked ~ table .cblc-2f-work-checkbox-1::after,
+	#cblc-2f-work-price-2:checked ~ table .cblc-2f-work-checkbox-2::after,
+	#cblc-2f-work-price-3:checked ~ table .cblc-2f-work-checkbox-3::after,
+	#cblc-2f-work-price-4:checked ~ table .cblc-2f-work-checkbox-4::after,
+	#cblc-2f-work-price-5:checked ~ table .cblc-2f-work-checkbox-5::after,
+	#cblc-2f-work-price-6:checked ~ table .cblc-2f-work-checkbox-6::after,
+	#cblc-2f-work-price-7:checked ~ table .cblc-2f-work-checkbox-7::after,
+	#cblc-2f-work-price-8:checked ~ table .cblc-2f-work-checkbox-8::after,
+	#cblc-2f-work-price-9:checked ~ table .cblc-2f-work-checkbox-9::after,
+	#cblc-2f-work-price-10:checked ~ table .cblc-2f-work-checkbox-10::after,
+	#cblc-2f-work-price-11:checked ~ table .cblc-2f-work-checkbox-11::after,
+	#cblc-2f-work-price-12:checked ~ table .cblc-2f-work-checkbox-12::after,
+	#cblc-2f-work-price-13:checked ~ table .cblc-2f-work-checkbox-13::after,
+	#cblc-2f-work-price-14:checked ~ table .cblc-2f-work-checkbox-14::after,
+	#cblc-2f-work-price-15:checked ~ table .cblc-2f-work-checkbox-15::after {
+		width: 1.4rem;
+		height: 1.4rem;
+		top: -0.3rem;
+		left: 0.2rem;
+	}
+	
+	/*
+	lexus TUNDRA
+	*/
+
+	.cblc-3-radio-front:checked ~ .cblc-container .cblc-3c-radio-front,
+	.cblc-3-radio-back:checked ~ .cblc-container .cblc-3c-radio-back,
+	.cblc-3-radio-steering:checked ~ .cblc-container .cblc-3c-radio-steering,
+	.cblc-3-radio-brake:checked ~ .cblc-container .cblc-3c-radio-brake,
+	.cblc-3-radio-transmission:checked ~ .cblc-container .cblc-3c-radio-transmission,
+	.cblc-3-radio-cooling:checked ~ .cblc-container .cblc-3c-radio-cooling,
+	.cblc-3-radio-engine:checked ~ .cblc-container .cblc-3c-radio-engine,
+	.cblc-3-radio-electrician:checked ~ .cblc-container .cblc-3c-radio-electrician,
+	.cblc-3-radio-fuel:checked ~ .cblc-container .cblc-3c-radio-fuel {
+		border-left: 0.4rem solid #DA251C;
+	}
+
+	.cblc-3f-btn {
+		width: 25.7rem;
+		height: 6.4rem;
+	}
+
+	.cblc-3f-work-checkbox {
+		width: 1.6rem;
+		height: 1.6rem;
+		border: 0.1rem solid #cccccc;
+		border-radius: 0.2rem;
+	}
+
+	#cblc-3f-work-price-1:checked ~ table .cblc-3f-work-checkbox-1::after,
+	#cblc-3f-work-price-2:checked ~ table .cblc-3f-work-checkbox-2::after,
+	#cblc-3f-work-price-3:checked ~ table .cblc-3f-work-checkbox-3::after,
+	#cblc-3f-work-price-4:checked ~ table .cblc-3f-work-checkbox-4::after,
+	#cblc-3f-work-price-5:checked ~ table .cblc-3f-work-checkbox-5::after,
+	#cblc-3f-work-price-6:checked ~ table .cblc-3f-work-checkbox-6::after,
+	#cblc-3f-work-price-7:checked ~ table .cblc-3f-work-checkbox-7::after,
+	#cblc-3f-work-price-8:checked ~ table .cblc-3f-work-checkbox-8::after,
+	#cblc-3f-work-price-9:checked ~ table .cblc-3f-work-checkbox-9::after,
+	#cblc-3f-work-price-10:checked ~ table .cblc-3f-work-checkbox-10::after,
+	#cblc-3f-work-price-11:checked ~ table .cblc-3f-work-checkbox-11::after,
+	#cblc-3f-work-price-12:checked ~ table .cblc-3f-work-checkbox-12::after,
+	#cblc-3f-work-price-13:checked ~ table .cblc-3f-work-checkbox-13::after,
+	#cblc-3f-work-price-14:checked ~ table .cblc-3f-work-checkbox-14::after,
+	#cblc-3f-work-price-15:checked ~ table .cblc-3f-work-checkbox-15::after {
+		width: 1.4rem;
+		height: 1.4rem;
+		top: -0.3rem;
+		left: 0.2rem;
+	}
+
+	/*
+	lexus LAND CRUISER PRADO
+	*/
+
+	.cblc-4-radio-front:checked ~ .cblc-container .cblc-4c-radio-front,
+	.cblc-4-radio-back:checked ~ .cblc-container .cblc-4c-radio-back,
+	.cblc-4-radio-steering:checked ~ .cblc-container .cblc-4c-radio-steering,
+	.cblc-4-radio-brake:checked ~ .cblc-container .cblc-4c-radio-brake,
+	.cblc-4-radio-transmission:checked ~ .cblc-container .cblc-4c-radio-transmission,
+	.cblc-4-radio-cooling:checked ~ .cblc-container .cblc-4c-radio-cooling,
+	.cblc-4-radio-engine:checked ~ .cblc-container .cblc-4c-radio-engine,
+	.cblc-4-radio-electrician:checked ~ .cblc-container .cblc-4c-radio-electrician,
+	.cblc-4-radio-fuel:checked ~ .cblc-container .cblc-4c-radio-fuel {
+		border-left: 0.4rem solid #DA251C;
+	}
+
+	.cblc-4f-btn {
+		width: 25.7rem;
+		height: 6.4rem;
+	}
+
+	.cblc-4f-work-checkbox {
+		width: 1.6rem;
+		height: 1.6rem;
+		border: 0.1rem solid #cccccc;
+		border-radius: 0.2rem;
+	}
+
+	#cblc-4f-work-price-1:checked ~ table .cblc-4f-work-checkbox-1::after,
+	#cblc-4f-work-price-2:checked ~ table .cblc-4f-work-checkbox-2::after,
+	#cblc-4f-work-price-3:checked ~ table .cblc-4f-work-checkbox-3::after,
+	#cblc-4f-work-price-4:checked ~ table .cblc-4f-work-checkbox-4::after,
+	#cblc-4f-work-price-5:checked ~ table .cblc-4f-work-checkbox-5::after,
+	#cblc-4f-work-price-6:checked ~ table .cblc-4f-work-checkbox-6::after,
+	#cblc-4f-work-price-7:checked ~ table .cblc-4f-work-checkbox-7::after,
+	#cblc-4f-work-price-8:checked ~ table .cblc-4f-work-checkbox-8::after,
+	#cblc-4f-work-price-9:checked ~ table .cblc-4f-work-checkbox-9::after,
+	#cblc-4f-work-price-10:checked ~ table .cblc-4f-work-checkbox-10::after,
+	#cblc-4f-work-price-11:checked ~ table .cblc-4f-work-checkbox-11::after,
+	#cblc-4f-work-price-12:checked ~ table .cblc-4f-work-checkbox-12::after,
+	#cblc-4f-work-price-13:checked ~ table .cblc-4f-work-checkbox-13::after,
+	#cblc-4f-work-price-14:checked ~ table .cblc-4f-work-checkbox-14::after,
+	#cblc-4f-work-price-15:checked ~ table .cblc-4f-work-checkbox-15::after {
+		width: 1.4rem;
+		height: 1.4rem;
+		top: -0.3rem;
+		left: 0.2rem;
+	}
+
+	/*
+	lexus HIGHLANDER
+	*/
+
+	.cblc-5-radio-front:checked ~ .cblc-container .cblc-5c-radio-front,
+	.cblc-5-radio-back:checked ~ .cblc-container .cblc-5c-radio-back,
+	.cblc-5-radio-steering:checked ~ .cblc-container .cblc-5c-radio-steering,
+	.cblc-5-radio-brake:checked ~ .cblc-container .cblc-5c-radio-brake,
+	.cblc-5-radio-transmission:checked ~ .cblc-container .cblc-5c-radio-transmission,
+	.cblc-5-radio-cooling:checked ~ .cblc-container .cblc-5c-radio-cooling,
+	.cblc-5-radio-engine:checked ~ .cblc-container .cblc-5c-radio-engine,
+	.cblc-5-radio-electrician:checked ~ .cblc-container .cblc-5c-radio-electrician,
+	.cblc-5-radio-fuel:checked ~ .cblc-container .cblc-5c-radio-fuel {
+		border-left: 0.4rem solid #DA251C;
+	}
+
+	.cblc-5f-btn {
+		width: 25.7rem;
+		height: 6.4rem;
+	}
+
+	.cblc-5f-work-checkbox {
+		width: 1.6rem;
+		height: 1.6rem;
+		border: 0.1rem solid #cccccc;
+		border-radius: 0.2rem;
+	}
+
+	#cblc-5f-work-price-1:checked ~ table .cblc-5f-work-checkbox-1::after,
+	#cblc-5f-work-price-2:checked ~ table .cblc-5f-work-checkbox-2::after,
+	#cblc-5f-work-price-3:checked ~ table .cblc-5f-work-checkbox-3::after,
+	#cblc-5f-work-price-4:checked ~ table .cblc-5f-work-checkbox-4::after,
+	#cblc-5f-work-price-5:checked ~ table .cblc-5f-work-checkbox-5::after,
+	#cblc-5f-work-price-6:checked ~ table .cblc-5f-work-checkbox-6::after,
+	#cblc-5f-work-price-7:checked ~ table .cblc-5f-work-checkbox-7::after,
+	#cblc-5f-work-price-8:checked ~ table .cblc-5f-work-checkbox-8::after,
+	#cblc-5f-work-price-9:checked ~ table .cblc-5f-work-checkbox-9::after,
+	#cblc-5f-work-price-10:checked ~ table .cblc-5f-work-checkbox-10::after,
+	#cblc-5f-work-price-11:checked ~ table .cblc-5f-work-checkbox-11::after,
+	#cblc-5f-work-price-12:checked ~ table .cblc-5f-work-checkbox-12::after,
+	#cblc-5f-work-price-13:checked ~ table .cblc-5f-work-checkbox-13::after,
+	#cblc-5f-work-price-14:checked ~ table .cblc-5f-work-checkbox-14::after,
+	#cblc-5f-work-price-15:checked ~ table .cblc-5f-work-checkbox-15::after {
+		width: 1.4rem;
+		height: 1.4rem;
+		top: -0.3rem;
+		left: 0.2rem;
+	}
+
+	/*
+	lexus CAMRY
+	*/
+
+	.cblc-6-radio-front:checked ~ .cblc-container .cblc-6c-radio-front,
+	.cblc-6-radio-back:checked ~ .cblc-container .cblc-6c-radio-back,
+	.cblc-6-radio-steering:checked ~ .cblc-container .cblc-6c-radio-steering,
+	.cblc-6-radio-brake:checked ~ .cblc-container .cblc-6c-radio-brake,
+	.cblc-6-radio-transmission:checked ~ .cblc-container .cblc-6c-radio-transmission,
+	.cblc-6-radio-cooling:checked ~ .cblc-container .cblc-6c-radio-cooling,
+	.cblc-6-radio-engine:checked ~ .cblc-container .cblc-6c-radio-engine,
+	.cblc-6-radio-electrician:checked ~ .cblc-container .cblc-6c-radio-electrician,
+	.cblc-6-radio-fuel:checked ~ .cblc-container .cblc-6c-radio-fuel {
+		border-left: 0.4rem solid #DA251C;
+	}
+
+	.cblc-6f-btn {
+		width: 25.7rem;
+		height: 6.4rem;
+	}
+
+	.cblc-6f-work-checkbox {
+		width: 1.6rem;
+		height: 1.6rem;
+		border: 0.1rem solid #cccccc;
+		border-radius: 0.2rem;
+	}
+	
+	#cblc-6f-work-price-1:checked ~ table .cblc-6f-work-checkbox-1::after,
+	#cblc-6f-work-price-2:checked ~ table .cblc-6f-work-checkbox-2::after,
+	#cblc-6f-work-price-3:checked ~ table .cblc-6f-work-checkbox-3::after,
+	#cblc-6f-work-price-4:checked ~ table .cblc-6f-work-checkbox-4::after,
+	#cblc-6f-work-price-5:checked ~ table .cblc-6f-work-checkbox-5::after,
+	#cblc-6f-work-price-6:checked ~ table .cblc-6f-work-checkbox-6::after,
+	#cblc-6f-work-price-7:checked ~ table .cblc-6f-work-checkbox-7::after,
+	#cblc-6f-work-price-8:checked ~ table .cblc-6f-work-checkbox-8::after,
+	#cblc-6f-work-price-9:checked ~ table .cblc-6f-work-checkbox-9::after,
+	#cblc-6f-work-price-10:checked ~ table .cblc-6f-work-checkbox-10::after,
+	#cblc-6f-work-price-11:checked ~ table .cblc-6f-work-checkbox-11::after,
+	#cblc-6f-work-price-12:checked ~ table .cblc-6f-work-checkbox-12::after,
+	#cblc-6f-work-price-13:checked ~ table .cblc-6f-work-checkbox-13::after,
+	#cblc-6f-work-price-14:checked ~ table .cblc-6f-work-checkbox-14::after,
+	#cblc-6f-work-price-15:checked ~ table .cblc-6f-work-checkbox-15::after {
+		width: 1.4rem;
+		height: 1.4rem;
+		top: -0.3rem;
+		left: 0.2rem;
+	}
+
+	.record {
+		margin-bottom: 6.4rem;
+	}
+
+	.record-left {
+		border-radius: 0.2rem;
+		padding: 3.2rem;
+		font-size: 1.4rem;
+	}
+
+	.record-left h2 {
+		margin-bottom: 1.6rem;
+	}
+
+	.record-left p {
+		margin-bottom: 1.6rem;
+	}
+
+	.record-left input {
+		margin-bottom: 1.6rem;
+		padding: 1.6rem;
+		padding-left: 3rem;	
+	}
+
+	.rlw-control {
+		margin-bottom: 1.6rem;
+		width: 1.6rem;
+		height: 1.6rem;
+		border: 0.1rem solid #E5E5E5;
+		margin-right: 1.6rem;
+	}
+
+	.rlw-control p {
+		margin-left: 3.1rem;
+	}
+
+	.record-left input[type="submit"] {
+		border-radius: 0.4rem;
+		padding: 1.6rem
+	}
+
+	.record-right {
+		font-size: 1.6rem;
+		width: 65%;
+	}
+
+	.record-right h2 {
+		margin-top: 3.2rem;
+	}
+
+	.rr-loading {
+		height: 32rem;
+	}
+
+	.rrl-frame {
+		height: 25.2rem;
+		margin: 3.2rem;
+		border: 0.4rem solid rgb(68, 76, 87, 0.5);
+	}
+
+	.rrl-frame p {
+		line-height: 2.4rem;
+	}
+
+	.rrlf-line-bottom {
+		height: 0.6rem;
+		bottom: -0.5rem;	
+	}
+
+	.rrlf-line-top {
+		height: 0.6rem;
+		top: -0.5rem;
+	}
+
+	.rrlf-line-left {
+		width: 0.6rem;
+		left: -0.5rem;
+	}
+
+	.rrlf-line-right {
+		width: 0.6rem;
+		right: -0.5rem;
+	}
+
+	.advantages {
+		margin-bottom: 5rem;
+	}
+
+	h3 {
+		font-size: 2rem;
+	}
+
+	.advantages h2 {
+		padding-top: 4.8rem;
+	}
+
+	.advantages h3 {
+		margin-bottom: 1.7rem;
+	}
+
+	.advantages p {
+		margin-top: 1.7rem;
+		padding-bottom: 7rem;
+	}
+
+	.advantages-block {
+		font-size: 1.4rem;
+		width: 26.47%;
+	}
+
+	.ab-img {
+		height: 18.5rem;
+	}
+
+	.ab-img img {
+		width: 10rem;
+	}
+
+	.ab-line {
+		width: 4.1rem;
+		height: 0.2rem;
+	}
+
+	.guarantees {
+		font-size: 1.4rem;
+		margin-bottom: 6.4rem;
+	}
+
+	.guarantees h2 {
+		margin-bottom: 7.8rem;
+	}
+
+	.guarantees-block {
+		width: 23rem;
+	}
+
+	.gb-img {
+		width: 8rem;
+		height: 8rem;
+		border-radius: 8rem;
+		margin-bottom: 2.1rem;
+	}
+
+	.gbi-price {
+		width: 4.4rem;
+	}
+
+	.gbi-repairs {
+		width: 3.4rem;
+	}
+
+	.gbi-employees {
+		width: 4.6rem;
+	}
+
+	.gbi-guarantees {
+		width: 4.3rem;
+	}
+
+	.gbi-comfort {
+		margin-bottom: 0.5rem;
+		margin-left: 0.5rem;
+		width: 4.2rem;
+	}
+
+	.guarantees h3 {
+		margin-bottom: 2rem;
+	}
+
+	.guarantees .gb-red {
+		margin-bottom: 1.6rem;
+	}
+	
+	.rs-service,
+	.rs-record {
+		padding-top: 6.4rem;
+		padding-bottom: 6.4rem;
+	}
+
+	.rs-service {
+		padding-right: 9.7rem;
+	}
+
+	.rs-record {
+		padding-left: 9.7rem;
+	}
+	
+	.rss-1,
+	.rss-3 {
+		font-size: 2.4rem;
+		width: 24.6rem;
+		margin-top: 1rem;
+	}
+
+	.rss-2 {
+		font-size: 9rem;
+		line-height: 8rem;
+	}
+
+	.rs-service ul {
+		font-size: 1.6rem;
+	}
+
+	.rs-service li {
+		height: 3.3rem;
+	}
+
+	.rs-record h4 {
+		font-size: 2.6rem;
+		margin-bottom: 2.8rem;
+	}
+
+	.rsr-form {
+		width: 36.4rem;
+	}
+
+	.rsrf-name-phone {
+		border: 0.1rem solid #444C57;
+		padding: 1.6rem;
+		padding-left: 3.1rem;
+		font-size: 1.4rem;
+		margin-bottom: 2rem;
+	}
+
+	.rsrf-label {
+		width: 1.6rem;
+		height: 1.6rem;
+		border: 0.1rem solid #444C57;
+		font-size: 1.2rem;
+		margin-bottom: 3.1rem;
+	}
+
+	.rsrf-label p {
+		min-width: 36.3rem;
+		margin-left: 3.9rem;
+	}
+
+	.rsrf-btn {
+		padding: 1.6rem;
+		font-size: 1.6rem;
+		border-radius: 0.4rem;
+	}
+
+	.map iframe {	
+		height: 57.6rem;
+	}
+
+	.in-instagram {
+		margin-top: 6.4rem;
+		padding-bottom: 6.4rem;
+		border-bottom: 0.1rem solid #444C57;
+	}
+
+	.in-instagram p {
+		margin-top: 1.6rem;
+		margin-bottom: 4.6rem;
+		font-size: 1.6rem;
+	}
+
+	.ii-foto {
+		height: 25.6rem;
+	}
+
+	.ii-foto div {
+		width: 25.6rem;
+		height: 25.6rem;
+	}
+
+	.footer-top {
+		font-size: 1.5rem;
+	}
+
+	.ft-block {
+		padding-top: 8.9rem;
+		margin-bottom: 3.5rem;
+		width: 85.4rem;
+		margin-right: 4.8rem;	
+	}
+
+	.ft-block svg {
+		top: -3.9rem;
+	}
+
+	.ft-phone svg,
+	.ft-mail svg {
+		width: 2.8rem;
+		height: 2.8rem;
+		margin-left: -1.4rem;
+	}
+
+	.ft-adress svg,
+	.ft-work svg {
+		width: 3.2rem;
+		height: 3.2rem;
+		margin-left: -1.6rem;
+	}
+
+	.ft-block .ft-mail svg {
+		top: -4.6rem;
+	}
+
+	.footer-center {
+		padding-top: 4rem;
+		padding-bottom: 2rem;
+	}
+
+	.footer-center .container {
+		font-size: 1.4rem;
+	}
+
+	.fcl-item {
+		margin-right: 17.9rem;
+		padding-left: 2.6rem;
+	}
+
+	.fcl-item .fcl-list-text {
+		margin-bottom: 3.2rem;
+		margin-left: -2.6rem;
+	}
+
+	.fcl-item li {
+		height: 3.2rem;
+	}
+
+	.fc-right {
+		width: 33.5rem
+	}
+
+	.fcr-link {
+		margin-bottom: 3.1rem;
+	}
+
+	.fcrl-list {
+		height: 3.6rem;
+	}
+
+	.fcr-contacts {
+		padding-left: 4rem;
+	}
+
+	.fcr-contacts .fcrc-list-header {
+		font-size: 1.4rem;
+		margin-left: -4rem;
+	}
+
+	.fcrc-list {
+		height: 3.6rem;
+		font-size: 1.3rem;
+	}
+
+	.fcrc-list-phone a:last-child {
+		margin-left: 1.5rem;
+	}
+
+	.fcrc-list-phone a:last-child::after {
+		width: 0.1rem;
+		left: -0.8rem;
+		top: -0.1rem;
+	}
+
+	.fcrc-list svg {
+		left: -4rem;
+		top: -0.3rem;
+		width: 2rem;
+		height: 2rem;
+	}
+
+	.footer-bottom p {
+		line-height: 4.8rem;
+		font-size: 1.2rem;
+	}
+
+	.fb-social {
+		width: 12.4rem;
+	}
+
+	.fb-social svg {
+		width: 3.1rem;
+		border-radius: 3.1rem;
+	}
+}
