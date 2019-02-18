@@ -377,13 +377,6 @@ h2 {
 	height: 1.8vw;
 }
 
-.cbt-container,
-.cbl-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
 .cbt-link-radio,
 .cbl-link-radio {
 	display: none;
@@ -397,6 +390,7 @@ h2 {
 .cb-link-radio-toyota:checked ~ .cb-toyota,
 .cb-link-radio-lexus:checked ~ .cb-lexus {
 	display: block;
+	overflow: hidden;
 }
 
 .cb-toyota .cbt-container,
@@ -405,6 +399,8 @@ h2 {
 	display: none;
 	margin-bottom: 2vw;
 	margin-top: 1vw;
+	align-items: center;
+	width: max-content;
 }
 
 .cb-link-radio-toyota:checked ~ .cb-toyota .cbt-container,
@@ -422,6 +418,11 @@ h2 {
 	text-transform: uppercase;
 	font-size: 1.05vw;
 	text-align: center;
+	margin-right: 1.9vw;
+}
+
+.cb-card:last-child {
+	margin-right: 0;
 }
 
 .cb-card:hover {	
@@ -447,7 +448,7 @@ h2 {
 	top: -0.5vw;
 }
 
-.cb-card label {
+.cb-card a {
 	visibility: hidden;
 	cursor: pointer;
 	color: #fff;
@@ -461,32 +462,14 @@ h2 {
 	margin-bottom: 1.35vw;
 }
 
-.cb-card:hover label {
+.cb-card:hover a {
 	visibility: visible;
 }
 
 .cbt-cost,
 .cbl-cost {
-	display: none;
+	display: flex;
 	flex-direction: column;
-}
-
-.cbt-link-radio-toyota-1:checked ~ .cbt-cost-1,
-.cbt-link-radio-toyota-2:checked ~ .cbt-cost-2,
-.cbt-link-radio-toyota-3:checked ~ .cbt-cost-3,
-.cbt-link-radio-toyota-4:checked ~ .cbt-cost-4,
-.cbt-link-radio-toyota-5:checked ~ .cbt-cost-5,
-.cbt-link-radio-toyota-6:checked ~ .cbt-cost-6 {
-	display: flex;
-}
-
-.cbl-link-radio-lexus-1:checked ~ .cbl-cost-1,
-.cbl-link-radio-lexus-2:checked ~ .cbl-cost-2,
-.cbl-link-radio-lexus-3:checked ~ .cbl-cost-3,
-.cbl-link-radio-lexus-4:checked ~ .cbl-cost-4,
-.cbl-link-radio-lexus-5:checked ~ .cbl-cost-5,
-.cbl-link-radio-lexus-6:checked ~ .cbl-cost-6 {
-	display: flex;
 }
 
 .cbtc-content,
@@ -2285,11 +2268,12 @@ h3 {
 .fc-left {
 	display: flex;
 	justify-content: space-between;
+	width: 60%;
 }
 
 .fcl-item {
-	margin-right: 13.46vw;
 	padding-left: 2vw;
+	width: 20%;
 }
 
 .fcl-item .fcl-list-text {
@@ -2308,7 +2292,6 @@ h3 {
 
 .fcl-item li {
 	list-style: url(../img/Vector5.svg);
-	height: 2.4vw;
 }
 
 .fcl-item li:hover {
@@ -2790,7 +2773,7 @@ h3 {
 		top: -0.5rem;
 	}
 
-	.cb-card label {
+	.cb-card a {
 		border-radius: 0.4rem;
 		height: 4rem;
 		width: 13.6rem;
